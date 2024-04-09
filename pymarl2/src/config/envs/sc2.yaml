@@ -1,0 +1,103 @@
+env: sc2
+
+env_args:
+  continuing_episode: False
+  difficulty: "7"
+  game_version: null
+  map_name: "3m"
+  move_amount: 2
+  obs_all_health: True
+  obs_instead_of_state: False
+  obs_last_action: False
+  obs_own_health: True
+  obs_pathing_grid: False
+  obs_terrain_height: False
+  obs_timestep_number: False
+  reward_death_value: 10
+  reward_defeat: 0
+  reward_negative_scale: 0.5
+  reward_only_positive: True
+  reward_scale: True
+  reward_scale_rate: 20
+  reward_sparse: False
+  reward_win: 200
+  replay_dir: ""
+  replay_prefix: ""
+  state_last_action: True
+  state_timestep_number: False
+  step_mul: 8
+  seed: null
+  heuristic_ai: False
+  heuristic_rest: False
+  debug: False
+
+
+runner: "episode"
+checkpoint_path: "/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-02_10-11-31"
+save_model: True
+save_replay: True
+save_model_interval: 5000
+test_greedy: True
+test_nepisode: 32
+test_interval: 10000
+log_interval: 10000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
+
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-02_10-11-31
+
+#C0:
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-18_16-01-42
+
+#C1:if minus > 0 and minus < 30:
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-17_10-29-21
+
+#C2: if enemy_health > 30:
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-18_09-07-47
+
+#C3: if enemy_shield > 0.5:
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-18_11-09-04
+
+#C1+C2:
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-18_13-57-44
+
+#C4: if dist > 2*shoot_range
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-23_10-12-13
+
+#C5: if dist < 0.5*shoot_range
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-23_15-33-04
+
+#C6: if attack > 0.3
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-24_10-14-45
+
+#C7: shoot_range 6->4
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-24_15-15-07
+
+#C8: if dist > shoot_range (shoot_range=6)
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-25_09-28-46
+
+#C9: check_bounds 0 <= x < 0.8*self.map_x and 0 <= y < 0.8*self.map_y
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-04-26_15-42-11
+
+#C10: shoot_range 6->8
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-05-04_13-52-24
+
+#C11:check_bounds 0 <= x < 0.5*self.map_x and 0 <= y < 0.5*self.map_y
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-05-06_14-14-36
+
+
+#8m
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-01_17-10-03
+
+# 1c3s5z
+# /home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-02_10-11-31
+
+# 1c3s5z diff=7
+# /home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-13_09-40-22
+
+# 2s3z
+# /home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-03_15-31-04
+
+#MMM
+#/home/dell/mxy/pymarl2-master/results/models/qmix_env=8_adam_td_lambda__2023-11-06_10-53-26

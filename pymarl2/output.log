@@ -1,0 +1,1908 @@
+nohup: ignoring input
+[DEBUG 15:40:46] git.cmd Popen(['git', 'version'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'version'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=<valid stream>)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=None)
+[DEBUG 15:40:46] git.cmd Popen(['git', 'cat-file', '--batch-check'], cwd=/home/dell/yyg/pymarl2_2/pymarl2, universal_newlines=False, shell=None, istream=<valid stream>)
+src/main.py:90: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config_dict = yaml.load(f)
+src/main.py:51: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config_dict = yaml.load(f)
+src/main.py:59: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  if isinstance(v, collections.Mapping):
+[INFO 15:40:46] root Saving to FileStorageObserver in /home/dell/yyg/pymarl2_2/pymarl2/results/sacred/2m_vs_1z/qmix_env=8_adam_td_lambda.
+[DEBUG 15:40:46] pymarl Using capture mode "fd"
+pygame 2.1.2 (SDL 2.0.16, Python 3.8.13)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[INFO 15:40:46] pymarl Running command 'my_main'
+[INFO 15:40:46] pymarl Started run with ID "1"
+[DEBUG 15:40:46] pymarl Starting Heartbeat
+[DEBUG 15:40:46] my_main Started
+[INFO 15:40:46] my_main Experiment Parameters:
+[INFO 15:40:46] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'n_rnn',
+    'agent_output_type': 'q',
+    'batch_size': 128,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'env': 'sc2',
+    'env_args': {   'continuing_episode': False,
+                    'debug': False,
+                    'difficulty': '7',
+                    'game_version': None,
+                    'heuristic_ai': False,
+                    'heuristic_rest': False,
+                    'map_name': '2m_vs_1z',
+                    'move_amount': 2,
+                    'obs_all_health': True,
+                    'obs_instead_of_state': False,
+                    'obs_last_action': False,
+                    'obs_own_health': True,
+                    'obs_pathing_grid': False,
+                    'obs_terrain_height': False,
+                    'obs_timestep_number': False,
+                    'replay_dir': '',
+                    'replay_prefix': '',
+                    'reward_death_value': 10,
+                    'reward_defeat': 0,
+                    'reward_negative_scale': 0.5,
+                    'reward_only_positive': True,
+                    'reward_scale': True,
+                    'reward_scale_rate': 20,
+                    'reward_sparse': False,
+                    'reward_win': 200,
+                    'seed': 77727522,
+                    'state_last_action': True,
+                    'state_timestep_number': False,
+                    'step_mul': 8},
+    'epsilon_anneal_time': 100000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gain': 0.01,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hypernet_embed': 64,
+    'label': 'default_label',
+    'learner': 'nq_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 10000,
+    'lr': 0.001,
+    'mac': 'n_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix_env=8_adam_td_lambda',
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimizer': 'adam',
+    'per_alpha': 0.6,
+    'per_beta': 0.4,
+    'q_lambda': False,
+    'repeat_id': 1,
+    'return_priority': False,
+    'rnn_hidden_dim': 64,
+    'run': 'default',
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': True,
+    'save_model_interval': 5000,
+    'save_replay': True,
+    'seed': 77727522,
+    't_max': 1005000,
+    'target_update_interval': 200,
+    'td_lambda': 0.6,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'use_cuda': True,
+    'use_layer_norm': False,
+    'use_orthogonal': False,
+    'use_per': False,
+    'use_tensorboard': False}
+
+[INFO 15:40:52] my_main Beginning training for 1005000 timesteps
+[INFO 15:40:52] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 46303 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-zbmng5yg/
+[INFO 15:40:53] absl Connecting to: ws://127.0.0.1:46303/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 46303 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-zbmng5yg/'
+Starting up...
+Startup Phase 1 complete
+[INFO 15:40:54] absl Connecting to: ws://127.0.0.1:46303/sc2api, attempt: 1, running: True
+[INFO 15:40:55] absl Connecting to: ws://127.0.0.1:46303/sc2api, attempt: 2, running: True
+[INFO 15:40:56] absl Connecting to: ws://127.0.0.1:46303/sc2api, attempt: 3, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 15:40:57] absl Connecting to: ws://127.0.0.1:46303/sc2api, attempt: 4, running: True
+Listening on: 127.0.0.1:46303
+Startup Phase 3 complete. Ready for commands.
+[INFO 15:40:58] absl Connecting to: ws://127.0.0.1:46303/sc2api, attempt: 5, running: True
+ConnectHandler: Request from 127.0.0.1:36362 accepted
+ReadyHandler: 127.0.0.1:36362 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+/home/dell/yyg/pymarl2_2/pymarl2/src/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 15:41:09] my_main t_env: 42 / 1005000
+[INFO 15:41:09] my_main Estimated time left: 28 minutes, 16 seconds. Time passed: 16 seconds
+[INFO 15:41:19] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/42
+[INFO 15:42:17] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/5066
+[INFO 15:43:06] my_main Updated target network
+[INFO 15:43:56] my_main Recent Stats | t_env:      10005 | Episode:      270
+battle_won_mean:           0.0000	ep_length_mean:           42.0000	epsilon:                   1.0000	grad_norm:                 0.3358
+loss_td:                   0.0306	q_taken_mean:              0.0553	return_mean:               0.3333	return_std:                0.0000
+target_mean:               0.1274	td_error_abs:              0.0306	test_battle_won_mean:      0.0000	test_ep_length_mean:      26.0625
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 15:43:58] my_main t_env: 10053 / 1005000
+[INFO 15:43:58] my_main Estimated time left: 4 hours, 38 minutes, 56 seconds. Time passed: 3 minutes, 5 seconds
+[INFO 15:44:06] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/10090
+[INFO 15:45:33] my_main Updated target network
+[INFO 15:45:56] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/15096
+[INFO 15:47:41] my_main Updated target network
+[INFO 15:47:56] my_main Recent Stats | t_env:      20029 | Episode:      626
+battle_won_mean:           0.0000	ep_length_mean:           36.9410	epsilon:                   0.9047	grad_norm:                 0.2174
+loss_td:                   0.0113	q_taken_mean:              0.3098	return_mean:               1.6627	return_std:                0.7181
+target_mean:               0.3419	td_error_abs:              0.0113	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.1250
+test_return_mean:          4.9670	test_return_std:           0.1589	
+[INFO 15:47:57] my_main t_env: 20056 / 1005000
+[INFO 15:47:57] my_main Estimated time left: 6 hours, 32 minutes, 45 seconds. Time passed: 7 minutes, 4 seconds
+[INFO 15:48:07] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/20108
+[INFO 15:49:55] my_main Updated target network
+[INFO 15:50:09] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/25114
+[INFO 15:52:00] my_main Updated target network
+[INFO 15:52:12] my_main Recent Stats | t_env:      30051 | Episode:     1020
+battle_won_mean:           0.0000	ep_length_mean:           28.1775	epsilon:                   0.8097	grad_norm:                 0.3548
+loss_td:                   0.0187	q_taken_mean:              0.5723	return_mean:               2.2998	return_std:                0.8289
+target_mean:               0.6046	td_error_abs:              0.0187	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.2812
+test_return_mean:          5.0017	test_return_std:           0.1531	
+[INFO 15:52:12] my_main t_env: 30078 / 1005000
+[INFO 15:52:12] my_main Estimated time left: 6 hours, 53 minutes, 37 seconds. Time passed: 11 minutes, 19 seconds
+[INFO 15:52:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/30124
+[INFO 15:54:09] my_main Updated target network
+[INFO 15:54:22] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/35130
+[INFO 15:56:11] my_main Updated target network
+[INFO 15:56:18] my_main Recent Stats | t_env:      40071 | Episode:     1413
+battle_won_mean:           0.0000	ep_length_mean:           25.4365	epsilon:                   0.7145	grad_norm:                 0.0765
+loss_td:                   0.0146	q_taken_mean:              0.7462	return_mean:               2.9089	return_std:                0.8848
+target_mean:               0.7521	td_error_abs:              0.0146	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.3750
+test_return_mean:          4.7847	test_return_std:           0.1933	
+[INFO 15:56:18] my_main t_env: 40093 / 1005000
+[INFO 15:56:18] my_main Estimated time left: 6 hours, 35 minutes, 0 seconds. Time passed: 15 minutes, 25 seconds
+[INFO 15:56:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/40136
+[INFO 15:58:26] my_main Updated target network
+[INFO 15:58:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/45137
+[INFO 16:00:18] my_main Recent Stats | t_env:      50071 | Episode:     1774
+battle_won_mean:           0.0000	ep_length_mean:           25.4835	epsilon:                   0.6193	grad_norm:                 0.2094
+loss_td:                   0.0148	q_taken_mean:              0.8631	return_mean:               3.4390	return_std:                0.9547
+target_mean:               0.8465	td_error_abs:              0.0148	test_battle_won_mean:      0.4688	test_ep_length_mean:      29.6562
+test_return_mean:         13.3090	test_return_std:           6.2929	
+[INFO 16:00:18] my_main t_env: 50106 / 1005000
+[INFO 16:00:18] my_main Estimated time left: 6 hours, 21 minutes, 47 seconds. Time passed: 19 minutes, 26 seconds
+[INFO 16:00:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/50167
+[INFO 16:00:48] my_main Updated target network
+[INFO 16:02:17] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/55172
+[INFO 16:02:58] my_main Updated target network
+[INFO 16:03:53] my_main Recent Stats | t_env:      60086 | Episode:     2084
+battle_won_mean:           0.0055	ep_length_mean:           27.7368	epsilon:                   0.5243	grad_norm:                 0.0914
+loss_td:                   0.0159	q_taken_mean:              0.9284	return_mean:               4.2849	return_std:                1.5988
+target_mean:               0.9217	td_error_abs:              0.0159	test_battle_won_mean:      0.2812	test_ep_length_mean:      31.5938
+test_return_mean:         10.7535	test_return_std:           5.7920	
+[INFO 16:03:54] my_main t_env: 60131 / 1005000
+[INFO 16:03:54] my_main Estimated time left: 5 hours, 38 minutes, 31 seconds. Time passed: 23 minutes, 1 seconds
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:36362 disconnected
+[INFO 16:03:56] absl Shutdown gracefully.
+[INFO 16:03:56] absl Shutdown with return code: -15
+[INFO 16:03:56] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 37777 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-c4__6iup/
+[INFO 16:03:56] absl Connecting to: ws://127.0.0.1:37777/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 37777 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-c4__6iup/'
+Starting up...
+Startup Phase 1 complete
+[INFO 16:03:57] absl Connecting to: ws://127.0.0.1:37777/sc2api, attempt: 1, running: True
+[INFO 16:03:58] absl Connecting to: ws://127.0.0.1:37777/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 16:03:59] absl Connecting to: ws://127.0.0.1:37777/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:37777
+Startup Phase 3 complete. Ready for commands.
+[INFO 16:04:00] absl Connecting to: ws://127.0.0.1:37777/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:35024 accepted
+ReadyHandler: 127.0.0.1:35024 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 16:04:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/60196
+[INFO 16:05:42] my_main Updated target network
+[INFO 16:06:03] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/65212
+[INFO 16:07:36] my_main Recent Stats | t_env:      70096 | Episode:     2360
+battle_won_mean:           0.0161	ep_length_mean:           32.3387	epsilon:                   0.4292	grad_norm:                 0.9435
+loss_td:                   0.0453	q_taken_mean:              1.1480	return_mean:               5.4064	return_std:                2.3008
+target_mean:               1.1015	td_error_abs:              0.0453	test_battle_won_mean:      0.8750	test_ep_length_mean:      33.2812
+test_return_mean:         18.4931	test_return_std:           3.9888	
+[INFO 16:07:37] my_main t_env: 70160 / 1005000
+[INFO 16:07:37] my_main Estimated time left: 5 hours, 46 minutes, 36 seconds. Time passed: 26 minutes, 44 seconds
+[INFO 16:07:50] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/70235
+[INFO 16:08:16] my_main Updated target network
+[INFO 16:09:27] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/75262
+[INFO 16:10:44] my_main Updated target network
+[INFO 16:11:01] my_main Recent Stats | t_env:      80102 | Episode:     2624
+battle_won_mean:           0.1264	ep_length_mean:           36.2058	epsilon:                   0.3338	grad_norm:                 2.1917
+loss_td:                   0.0878	q_taken_mean:              1.3055	return_mean:               7.7688	return_std:                4.8307
+target_mean:               1.2653	td_error_abs:              0.0878	test_battle_won_mean:      1.0000	test_ep_length_mean:      29.9375
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:11:02] my_main t_env: 80177 / 1005000
+[INFO 16:11:02] my_main Estimated time left: 5 hours, 15 minutes, 46 seconds. Time passed: 30 minutes, 9 seconds
+[INFO 16:11:18] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/80289
+[INFO 16:12:53] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/85309
+[INFO 16:13:26] my_main Updated target network
+[INFO 16:14:27] my_main Recent Stats | t_env:      90107 | Episode:     2885
+battle_won_mean:           0.4129	ep_length_mean:           37.9432	epsilon:                   0.2387	grad_norm:                 1.6403
+loss_td:                   0.0748	q_taken_mean:              1.4259	return_mean:              12.1268	return_std:                6.6706
+target_mean:               1.3596	td_error_abs:              0.0748	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.9375
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:14:28] my_main t_env: 90211 / 1005000
+[INFO 16:14:28] my_main Estimated time left: 5 hours, 13 minutes, 11 seconds. Time passed: 33 minutes, 35 seconds
+[INFO 16:14:45] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/90321
+[INFO 16:16:02] my_main Updated target network
+[INFO 16:16:25] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/95354
+[INFO 16:18:02] my_main Recent Stats | t_env:     100130 | Episode:     3166
+battle_won_mean:           0.7366	ep_length_mean:           38.2977	epsilon:                   0.1433	grad_norm:                 3.5373
+loss_td:                   0.1312	q_taken_mean:              1.6185	return_mean:              16.5526	return_std:                5.7947
+target_mean:               1.5599	td_error_abs:              0.1312	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.5625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:18:04] my_main t_env: 100232 / 1005000
+[INFO 16:18:04] my_main Estimated time left: 5 hours, 24 minutes, 32 seconds. Time passed: 37 minutes, 11 seconds
+[INFO 16:18:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/100371
+[INFO 16:18:39] my_main Updated target network
+[INFO 16:20:02] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/105383
+[INFO 16:20:59] my_main Updated target network
+[INFO 16:21:38] my_main Recent Stats | t_env:     110144 | Episode:     3457
+battle_won_mean:           0.9110	ep_length_mean:           35.6619	epsilon:                   0.0500	grad_norm:                 1.3577
+loss_td:                   0.1232	q_taken_mean:              2.0555	return_mean:              18.8711	return_std:                3.6234
+target_mean:               2.0586	td_error_abs:              0.1232	test_battle_won_mean:      1.0000	test_ep_length_mean:      32.1562
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:21:40] my_main t_env: 110243 / 1005000
+[INFO 16:21:40] my_main Estimated time left: 5 hours, 21 minutes, 25 seconds. Time passed: 40 minutes, 47 seconds
+[INFO 16:21:55] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/110411
+[INFO 16:23:29] my_main Updated target network
+[INFO 16:23:36] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/115427
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:35024 disconnected
+[INFO 16:24:53] absl Shutdown gracefully.
+[INFO 16:24:53] absl Shutdown with return code: -15
+[INFO 16:24:53] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 32793 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-t837_x1b/
+[INFO 16:24:53] absl Connecting to: ws://127.0.0.1:32793/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 32793 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-t837_x1b/'
+Starting up...
+Startup Phase 1 complete
+[INFO 16:24:54] absl Connecting to: ws://127.0.0.1:32793/sc2api, attempt: 1, running: True
+[INFO 16:24:55] absl Connecting to: ws://127.0.0.1:32793/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 16:24:56] absl Connecting to: ws://127.0.0.1:32793/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:32793
+Startup Phase 3 complete. Ready for commands.
+[INFO 16:24:57] absl Connecting to: ws://127.0.0.1:32793/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:55486 accepted
+ReadyHandler: 127.0.0.1:55486 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 16:25:26] my_main Recent Stats | t_env:     120163 | Episode:     3749
+battle_won_mean:           0.9725	ep_length_mean:           34.4021	epsilon:                   0.0500	grad_norm:                 0.7755
+loss_td:                   0.1371	q_taken_mean:              2.4001	return_mean:              19.6648	return_std:                1.9960
+target_mean:               2.4085	td_error_abs:              0.1371	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.6875
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:25:28] my_main t_env: 120260 / 1005000
+[INFO 16:25:28] my_main Estimated time left: 5 hours, 36 minutes, 25 seconds. Time passed: 44 minutes, 35 seconds
+[INFO 16:25:45] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/120445
+[INFO 16:26:16] my_main Updated target network
+[INFO 16:27:23] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/125463
+[INFO 16:28:35] my_main Updated target network
+[INFO 16:28:54] my_main Recent Stats | t_env:     130179 | Episode:     4026
+battle_won_mean:           0.9863	ep_length_mean:           34.3048	epsilon:                   0.0500	grad_norm:                 4.2928
+loss_td:                   0.2378	q_taken_mean:              3.3832	return_mean:              19.8120	return_std:                1.5967
+target_mean:               3.3056	td_error_abs:              0.2378	test_battle_won_mean:      1.0000	test_ep_length_mean:      32.9062
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:28:56] my_main t_env: 130278 / 1005000
+[INFO 16:28:56] my_main Estimated time left: 5 hours, 1 minutes, 58 seconds. Time passed: 48 minutes, 3 seconds
+[INFO 16:29:14] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/130491
+[INFO 16:30:50] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/135511
+[INFO 16:31:08] my_main Updated target network
+[INFO 16:32:22] my_main Recent Stats | t_env:     140204 | Episode:     4303
+battle_won_mean:           0.9856	ep_length_mean:           36.1661	epsilon:                   0.0500	grad_norm:                 2.1085
+loss_td:                   0.2126	q_taken_mean:              3.3634	return_mean:              19.8430	return_std:                1.3094
+target_mean:               3.3572	td_error_abs:              0.2126	test_battle_won_mean:      1.0000	test_ep_length_mean:      33.4062
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:32:23] my_main t_env: 140280 / 1005000
+[INFO 16:32:23] my_main Estimated time left: 4 hours, 58 minutes, 47 seconds. Time passed: 51 minutes, 30 seconds
+[INFO 16:32:42] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/140524
+[INFO 16:33:46] my_main Updated target network
+[INFO 16:34:21] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/145529
+[INFO 16:35:53] my_main Recent Stats | t_env:     150209 | Episode:     4576
+battle_won_mean:           0.9928	ep_length_mean:           36.2391	epsilon:                   0.0500	grad_norm:                 4.7822
+loss_td:                   0.2775	q_taken_mean:              3.8963	return_mean:              19.9352	return_std:                0.7756
+target_mean:               3.8126	td_error_abs:              0.2775	test_battle_won_mean:      1.0000	test_ep_length_mean:      36.5625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:35:55] my_main t_env: 150312 / 1005000
+[INFO 16:35:55] my_main Estimated time left: 5 hours, 52 seconds. Time passed: 55 minutes, 2 seconds
+[INFO 16:36:14] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/150553
+[INFO 16:36:25] my_main Updated target network
+[INFO 16:37:49] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/155567
+[INFO 16:38:47] my_main Updated target network
+[INFO 16:39:17] my_main Recent Stats | t_env:     160229 | Episode:     4845
+battle_won_mean:           0.9927	ep_length_mean:           36.6131	epsilon:                   0.0500	grad_norm:                 3.0429
+loss_td:                   0.2312	q_taken_mean:              4.1601	return_mean:              19.9352	return_std:                0.7779
+target_mean:               4.2154	td_error_abs:              0.2312	test_battle_won_mean:      1.0000	test_ep_length_mean:      33.4375
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:39:19] my_main t_env: 160339 / 1005000
+[INFO 16:39:19] my_main Estimated time left: 4 hours, 46 minutes, 51 seconds. Time passed: 58 minutes, 27 seconds
+[INFO 16:39:38] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/160570
+[INFO 16:41:10] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/165594
+[INFO 16:41:21] my_main Updated target network
+[INFO 16:42:37] my_main Recent Stats | t_env:     170267 | Episode:     5107
+battle_won_mean:           0.9888	ep_length_mean:           37.2751	epsilon:                   0.0500	grad_norm:                 2.4998
+loss_td:                   0.2364	q_taken_mean:              4.5665	return_mean:              19.8754	return_std:                1.2046
+target_mean:               4.5519	td_error_abs:              0.2364	test_battle_won_mean:      1.0000	test_ep_length_mean:      37.1250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:42:40] my_main t_env: 170367 / 1005000
+[INFO 16:42:40] my_main Estimated time left: 4 hours, 37 minutes, 39 seconds. Time passed: 1 hours, 1 minutes, 47 seconds
+[INFO 16:42:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/170596
+[INFO 16:43:57] my_main Updated target network
+[INFO 16:44:29] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/175613
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:55486 disconnected
+[INFO 16:45:07] absl Shutdown gracefully.
+[INFO 16:45:07] absl Shutdown with return code: -15
+[INFO 16:45:07] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 46765 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-nqgf625x/
+[INFO 16:45:07] absl Connecting to: ws://127.0.0.1:46765/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 46765 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-nqgf625x/'
+Starting up...
+Startup Phase 1 complete
+[INFO 16:45:08] absl Connecting to: ws://127.0.0.1:46765/sc2api, attempt: 1, running: True
+[INFO 16:45:09] absl Connecting to: ws://127.0.0.1:46765/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 16:45:10] absl Connecting to: ws://127.0.0.1:46765/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:46765
+Startup Phase 3 complete. Ready for commands.
+[INFO 16:45:11] absl Connecting to: ws://127.0.0.1:46765/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:47078 accepted
+ReadyHandler: 127.0.0.1:47078 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 16:46:03] my_main Recent Stats | t_env:     180300 | Episode:     5379
+battle_won_mean:           0.9809	ep_length_mean:           38.2748	epsilon:                   0.0500	grad_norm:                 4.1821
+loss_td:                   0.2615	q_taken_mean:              5.0983	return_mean:              19.8041	return_std:                1.4576
+target_mean:               5.0525	td_error_abs:              0.2615	test_battle_won_mean:      1.0000	test_ep_length_mean:      34.1562
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:46:05] my_main t_env: 180392 / 1005000
+[INFO 16:46:05] my_main Estimated time left: 4 hours, 41 minutes, 20 seconds. Time passed: 1 hours, 5 minutes, 12 seconds
+[INFO 16:46:25] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/180635
+[INFO 16:46:35] my_main Updated target network
+[INFO 16:47:53] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/185684
+[INFO 16:48:47] my_main Updated target network
+[INFO 16:49:09] my_main Recent Stats | t_env:     190303 | Episode:     5632
+battle_won_mean:           0.9926	ep_length_mean:           36.9926	epsilon:                   0.0500	grad_norm:                 3.8545
+loss_td:                   0.2285	q_taken_mean:              5.3088	return_mean:              19.9100	return_std:                1.0443
+target_mean:               5.2696	td_error_abs:              0.2285	test_battle_won_mean:      0.9062	test_ep_length_mean:      39.3438
+test_return_mean:         19.1235	test_return_std:           2.7758	
+[INFO 16:49:11] my_main t_env: 190409 / 1005000
+[INFO 16:49:11] my_main Estimated time left: 4 hours, 11 minutes, 57 seconds. Time passed: 1 hours, 8 minutes, 18 seconds
+[INFO 16:49:33] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/190687
+[INFO 16:51:01] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/195714
+[INFO 16:51:24] my_main Updated target network
+[INFO 16:52:24] my_main Recent Stats | t_env:     200303 | Episode:     5890
+battle_won_mean:           0.9685	ep_length_mean:           39.4370	epsilon:                   0.0500	grad_norm:                 3.2103
+loss_td:                   0.2387	q_taken_mean:              5.6533	return_mean:              19.7032	return_std:                1.6638
+target_mean:               5.6108	td_error_abs:              0.2387	test_battle_won_mean:      0.9688	test_ep_length_mean:      41.7500
+test_return_mean:         19.6927	test_return_std:           1.7109	
+[INFO 16:52:27] my_main t_env: 200436 / 1005000
+[INFO 16:52:27] my_main Estimated time left: 4 hours, 22 minutes, 11 seconds. Time passed: 1 hours, 11 minutes, 34 seconds
+[INFO 16:52:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/200735
+[INFO 16:53:52] my_main Updated target network
+[INFO 16:54:19] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/205747
+[INFO 16:55:39] my_main Recent Stats | t_env:     210309 | Episode:     6160
+battle_won_mean:           0.9768	ep_length_mean:           38.7143	epsilon:                   0.0500	grad_norm:                 6.3198
+loss_td:                   0.3033	q_taken_mean:              5.7291	return_mean:              19.7769	return_std:                1.5134
+target_mean:               5.8440	td_error_abs:              0.3033	test_battle_won_mean:      1.0000	test_ep_length_mean:      36.4688
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:55:42] my_main t_env: 210458 / 1005000
+[INFO 16:55:42] my_main Estimated time left: 4 hours, 18 minutes, 18 seconds. Time passed: 1 hours, 14 minutes, 49 seconds
+[INFO 16:56:00] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/210752
+[INFO 16:56:19] my_main Updated target network
+[INFO 16:57:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/215775
+[INFO 16:58:41] my_main Updated target network
+[INFO 16:58:55] my_main Recent Stats | t_env:     220332 | Episode:     6423
+battle_won_mean:           0.9926	ep_length_mean:           37.1185	epsilon:                   0.0500	grad_norm:                 1.4338
+loss_td:                   0.2410	q_taken_mean:              5.7397	return_mean:              19.9107	return_std:                1.0337
+target_mean:               5.7394	td_error_abs:              0.2410	test_battle_won_mean:      1.0000	test_ep_length_mean:      35.0312
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 16:58:59] my_main t_env: 220492 / 1005000
+[INFO 16:58:59] my_main Estimated time left: 4 hours, 15 minutes, 42 seconds. Time passed: 1 hours, 18 minutes, 6 seconds
+[INFO 16:59:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/220808
+[INFO 17:00:52] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/225814
+[INFO 17:01:19] my_main Updated target network
+[INFO 17:02:16] my_main Recent Stats | t_env:     230347 | Episode:     6681
+battle_won_mean:           0.9772	ep_length_mean:           38.1521	epsilon:                   0.0500	grad_norm:                 1.6750
+loss_td:                   0.1520	q_taken_mean:              6.3050	return_mean:              19.7342	return_std:                1.7596
+target_mean:               6.3173	td_error_abs:              0.1520	test_battle_won_mean:      1.0000	test_ep_length_mean:      39.7812
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:02:18] my_main t_env: 230492 / 1005000
+[INFO 17:02:18] my_main Estimated time left: 4 hours, 17 minutes, 28 seconds. Time passed: 1 hours, 21 minutes, 25 seconds
+[INFO 17:02:38] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/230834
+[INFO 17:03:52] my_main Updated target network
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:47078 disconnected
+[INFO 17:04:02] absl Shutdown gracefully.
+[INFO 17:04:02] absl Shutdown with return code: -15
+[INFO 17:04:02] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 42045 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-y73p7hir/
+[INFO 17:04:02] absl Connecting to: ws://127.0.0.1:42045/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 42045 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-y73p7hir/'
+Starting up...
+Startup Phase 1 complete
+[INFO 17:04:03] absl Connecting to: ws://127.0.0.1:42045/sc2api, attempt: 1, running: True
+[INFO 17:04:04] absl Connecting to: ws://127.0.0.1:42045/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 17:04:05] absl Connecting to: ws://127.0.0.1:42045/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:42045
+Startup Phase 3 complete. Ready for commands.
+[INFO 17:04:06] absl Connecting to: ws://127.0.0.1:42045/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:50812 accepted
+ReadyHandler: 127.0.0.1:50812 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 17:04:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/235870
+[INFO 17:05:38] my_main Recent Stats | t_env:     240365 | Episode:     6936
+battle_won_mean:           0.9728	ep_length_mean:           38.9105	epsilon:                   0.0500	grad_norm:                 1.3596
+loss_td:                   0.1388	q_taken_mean:              6.5610	return_mean:              19.6760	return_std:                1.9368
+target_mean:               6.5440	td_error_abs:              0.1388	test_battle_won_mean:      1.0000	test_ep_length_mean:      35.4062
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:05:41] my_main t_env: 240517 / 1005000
+[INFO 17:05:41] my_main Estimated time left: 4 hours, 18 minutes, 0 seconds. Time passed: 1 hours, 24 minutes, 48 seconds
+[INFO 17:06:06] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/240890
+[INFO 17:06:43] my_main Updated target network
+[INFO 17:07:38] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/245923
+[INFO 17:09:02] my_main Recent Stats | t_env:     250383 | Episode:     7193
+battle_won_mean:           0.9531	ep_length_mean:           39.1602	epsilon:                   0.0500	grad_norm:                 3.2436
+loss_td:                   0.1818	q_taken_mean:              6.3825	return_mean:              19.4867	return_std:                2.3473
+target_mean:               6.3756	td_error_abs:              0.1818	test_battle_won_mean:      0.8438	test_ep_length_mean:      45.1875
+test_return_mean:         18.4028	test_return_std:           3.7456	
+[INFO 17:09:04] my_main t_env: 250540 / 1005000
+[INFO 17:09:04] my_main Estimated time left: 4 hours, 15 minutes, 3 seconds. Time passed: 1 hours, 28 minutes, 11 seconds
+[INFO 17:09:22] my_main Updated target network
+[INFO 17:09:26] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/250925
+[INFO 17:10:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/255935
+[INFO 17:11:49] my_main Updated target network
+[INFO 17:12:22] my_main Recent Stats | t_env:     260400 | Episode:     7445
+battle_won_mean:           0.9416	ep_length_mean:           39.0000	epsilon:                   0.0500	grad_norm:                 1.7514
+loss_td:                   0.1121	q_taken_mean:              6.5947	return_mean:              19.2972	return_std:                2.8312
+target_mean:               6.6142	td_error_abs:              0.1121	test_battle_won_mean:      1.0000	test_ep_length_mean:      35.9375
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:12:25] my_main t_env: 260562 / 1005000
+[INFO 17:12:25] my_main Estimated time left: 4 hours, 8 minutes, 47 seconds. Time passed: 1 hours, 31 minutes, 32 seconds
+[INFO 17:12:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/260966
+[INFO 17:14:21] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/265977
+[INFO 17:14:28] my_main Updated target network
+[INFO 17:15:43] my_main Recent Stats | t_env:     270408 | Episode:     7708
+battle_won_mean:           0.9405	ep_length_mean:           39.7698	epsilon:                   0.0500	grad_norm:                 0.6708
+loss_td:                   0.0586	q_taken_mean:              6.7535	return_mean:              19.2780	return_std:                2.8911
+target_mean:               6.7669	td_error_abs:              0.0586	test_battle_won_mean:      1.0000	test_ep_length_mean:      35.2812
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:15:46] my_main t_env: 270562 / 1005000
+[INFO 17:15:46] my_main Estimated time left: 4 hours, 5 minutes, 19 seconds. Time passed: 1 hours, 34 minutes, 53 seconds
+[INFO 17:16:10] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/271010
+[INFO 17:17:02] my_main Updated target network
+[INFO 17:17:42] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/276034
+[INFO 17:19:02] my_main Recent Stats | t_env:     280422 | Episode:     7976
+battle_won_mean:           0.9582	ep_length_mean:           38.0228	epsilon:                   0.0500	grad_norm:                 1.2480
+loss_td:                   0.0538	q_taken_mean:              6.8140	return_mean:              19.4958	return_std:                2.4151
+target_mean:               6.8327	td_error_abs:              0.0538	test_battle_won_mean:      0.9688	test_ep_length_mean:      37.8750
+test_return_mean:         19.6319	test_return_std:           2.0492	
+[INFO 17:19:06] my_main t_env: 280580 / 1005000
+[INFO 17:19:06] my_main Estimated time left: 4 hours, 55 seconds. Time passed: 1 hours, 38 minutes, 13 seconds
+[INFO 17:19:29] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/281062
+[INFO 17:19:33] my_main Updated target network
+[INFO 17:21:02] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/286088
+[INFO 17:21:44] my_main Updated target network
+[INFO 17:22:24] my_main Recent Stats | t_env:     290445 | Episode:     8261
+battle_won_mean:           0.9515	ep_length_mean:           37.3806	epsilon:                   0.0500	grad_norm:                 1.5060
+loss_td:                   0.1063	q_taken_mean:              6.9132	return_mean:              19.3966	return_std:                2.6762
+target_mean:               6.9040	td_error_abs:              0.1063	test_battle_won_mean:      1.0000	test_ep_length_mean:      35.5312
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:22:26] my_main t_env: 290588 / 1005000
+[INFO 17:22:26] my_main Estimated time left: 3 hours, 58 minutes, 32 seconds. Time passed: 1 hours, 41 minutes, 33 seconds
+[INFO 17:22:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/291114
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:50812 disconnected
+[INFO 17:23:34] absl Shutdown gracefully.
+[INFO 17:23:34] absl Shutdown with return code: -15
+[INFO 17:23:34] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 36235 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-odadhtbi/
+[INFO 17:23:34] absl Connecting to: ws://127.0.0.1:36235/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36235 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-odadhtbi/'
+Starting up...
+Startup Phase 1 complete
+[INFO 17:23:35] absl Connecting to: ws://127.0.0.1:36235/sc2api, attempt: 1, running: True
+[INFO 17:23:36] absl Connecting to: ws://127.0.0.1:36235/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 17:23:37] absl Connecting to: ws://127.0.0.1:36235/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:36235
+Startup Phase 3 complete. Ready for commands.
+[INFO 17:23:38] absl Connecting to: ws://127.0.0.1:36235/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:56898 accepted
+ReadyHandler: 127.0.0.1:56898 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 17:24:17] my_main Updated target network
+[INFO 17:24:34] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/296142
+[INFO 17:25:58] my_main Recent Stats | t_env:     300464 | Episode:     8562
+battle_won_mean:           0.9895	ep_length_mean:           35.1158	epsilon:                   0.0500	grad_norm:                 1.1475
+loss_td:                   0.0656	q_taken_mean:              6.8322	return_mean:              19.8750	return_std:                1.2115
+target_mean:               6.8129	td_error_abs:              0.0656	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.6562
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:26:00] my_main t_env: 300599 / 1005000
+[INFO 17:26:00] my_main Estimated time left: 4 hours, 11 minutes, 10 seconds. Time passed: 1 hours, 45 minutes, 7 seconds
+[INFO 17:26:25] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/301154
+[INFO 17:26:37] my_main Updated target network
+[INFO 17:28:00] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/306163
+[INFO 17:28:42] my_main Updated target network
+[INFO 17:29:20] my_main Recent Stats | t_env:     310468 | Episode:     8862
+battle_won_mean:           0.9967	ep_length_mean:           33.2591	epsilon:                   0.0500	grad_norm:                 0.8967
+loss_td:                   0.0322	q_taken_mean:              6.8502	return_mean:              19.9413	return_std:                1.0166
+target_mean:               6.8504	td_error_abs:              0.0322	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.7500
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:29:23] my_main t_env: 310630 / 1005000
+[INFO 17:29:23] my_main Estimated time left: 3 hours, 54 minutes, 20 seconds. Time passed: 1 hours, 48 minutes, 30 seconds
+[INFO 17:29:45] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/311182
+[INFO 17:31:01] my_main Updated target network
+[INFO 17:31:19] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/316203
+[INFO 17:32:39] my_main Recent Stats | t_env:     320480 | Episode:     9152
+battle_won_mean:           0.9967	ep_length_mean:           33.3256	epsilon:                   0.0500	grad_norm:                 1.4420
+loss_td:                   0.0425	q_taken_mean:              6.8071	return_mean:              19.9572	return_std:                0.7417
+target_mean:               6.8166	td_error_abs:              0.0425	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.6250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:32:43] my_main t_env: 320636 / 1005000
+[INFO 17:32:43] my_main Estimated time left: 3 hours, 47 minutes, 12 seconds. Time passed: 1 hours, 51 minutes, 50 seconds
+[INFO 17:33:07] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/321234
+[INFO 17:33:23] my_main Updated target network
+[INFO 17:34:43] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/326239
+[INFO 17:35:32] my_main Updated target network
+[INFO 17:36:08] my_main Recent Stats | t_env:     330509 | Episode:     9456
+battle_won_mean:           0.9897	ep_length_mean:           34.5034	epsilon:                   0.0500	grad_norm:                 0.5084
+loss_td:                   0.0353	q_taken_mean:              6.6832	return_mean:              19.8839	return_std:                1.1469
+target_mean:               6.6822	td_error_abs:              0.0353	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.2188
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:36:11] my_main t_env: 330651 / 1005000
+[INFO 17:36:11] my_main Estimated time left: 3 hours, 53 minutes, 16 seconds. Time passed: 1 hours, 55 minutes, 18 seconds
+[INFO 17:36:33] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/331243
+[INFO 17:37:50] my_main Updated target network
+[INFO 17:38:06] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/336257
+[INFO 17:39:22] my_main Recent Stats | t_env:     340517 | Episode:     9756
+battle_won_mean:           0.9868	ep_length_mean:           33.0528	epsilon:                   0.0500	grad_norm:                 0.7925
+loss_td:                   0.0417	q_taken_mean:              6.6428	return_mean:              19.8207	return_std:                1.5537
+target_mean:               6.6434	td_error_abs:              0.0417	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.1250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:39:25] my_main t_env: 340695 / 1005000
+[INFO 17:39:25] my_main Estimated time left: 3 hours, 33 minutes, 56 seconds. Time passed: 1 hours, 58 minutes, 32 seconds
+[INFO 17:39:48] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/341265
+[INFO 17:40:01] my_main Updated target network
+[INFO 17:41:19] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/346265
+[INFO 17:42:04] my_main Updated target network
+[INFO 17:42:38] my_main Recent Stats | t_env:     350519 | Episode:    10055
+battle_won_mean:           0.9867	ep_length_mean:           33.3688	epsilon:                   0.0500	grad_norm:                 0.9193
+loss_td:                   0.0589	q_taken_mean:              6.6630	return_mean:              19.8343	return_std:                1.4297
+target_mean:               6.6489	td_error_abs:              0.0589	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.0000
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:42:42] my_main t_env: 350716 / 1005000
+[INFO 17:42:42] my_main Estimated time left: 3 hours, 34 minutes, 54 seconds. Time passed: 2 hours, 1 minutes, 49 seconds
+[INFO 17:43:03] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/351290
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:56898 disconnected
+[INFO 17:43:28] absl Shutdown gracefully.
+[INFO 17:43:28] absl Shutdown with return code: -15
+[INFO 17:43:28] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 41769 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-etsrvdkf/
+[INFO 17:43:28] absl Connecting to: ws://127.0.0.1:41769/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41769 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-etsrvdkf/'
+Starting up...
+Startup Phase 1 complete
+[INFO 17:43:29] absl Connecting to: ws://127.0.0.1:41769/sc2api, attempt: 1, running: True
+[INFO 17:43:30] absl Connecting to: ws://127.0.0.1:41769/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 17:43:31] absl Connecting to: ws://127.0.0.1:41769/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:41769
+Startup Phase 3 complete. Ready for commands.
+[INFO 17:43:32] absl Connecting to: ws://127.0.0.1:41769/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:42886 accepted
+ReadyHandler: 127.0.0.1:42886 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 17:44:31] my_main Updated target network
+[INFO 17:44:42] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/356321
+[INFO 17:45:59] my_main Recent Stats | t_env:     360546 | Episode:    10343
+battle_won_mean:           0.9867	ep_length_mean:           33.4033	epsilon:                   0.0500	grad_norm:                 1.3704
+loss_td:                   0.0348	q_taken_mean:              6.6529	return_mean:              19.8319	return_std:                1.4495
+target_mean:               6.6853	td_error_abs:              0.0348	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.5625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:46:02] my_main t_env: 360719 / 1005000
+[INFO 17:46:02] my_main Estimated time left: 3 hours, 34 minutes, 26 seconds. Time passed: 2 hours, 5 minutes, 9 seconds
+[INFO 17:46:24] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/361326
+[INFO 17:46:44] my_main Updated target network
+[INFO 17:47:56] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/366355
+[INFO 17:48:47] my_main Updated target network
+[INFO 17:49:15] my_main Recent Stats | t_env:     370561 | Episode:    10648
+battle_won_mean:           0.9895	ep_length_mean:           34.8537	epsilon:                   0.0500	grad_norm:                 0.8817
+loss_td:                   0.0392	q_taken_mean:              6.7724	return_mean:              19.8643	return_std:                1.3238
+target_mean:               6.7945	td_error_abs:              0.0392	test_battle_won_mean:      1.0000	test_ep_length_mean:      34.0000
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:49:19] my_main t_env: 370750 / 1005000
+[INFO 17:49:19] my_main Estimated time left: 3 hours, 27 minutes, 32 seconds. Time passed: 2 hours, 8 minutes, 26 seconds
+[INFO 17:49:42] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/371369
+[INFO 17:50:54] my_main Updated target network
+[INFO 17:51:11] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/376396
+[INFO 17:52:24] my_main Recent Stats | t_env:     380576 | Episode:    10959
+battle_won_mean:           0.9869	ep_length_mean:           32.7810	epsilon:                   0.0500	grad_norm:                 0.5792
+loss_td:                   0.0431	q_taken_mean:              6.8072	return_mean:              19.8388	return_std:                1.4021
+target_mean:               6.8102	td_error_abs:              0.0431	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.4688
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:52:27] my_main t_env: 380764 / 1005000
+[INFO 17:52:27] my_main Estimated time left: 3 hours, 15 minutes, 13 seconds. Time passed: 2 hours, 11 minutes, 34 seconds
+[INFO 17:52:50] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/381401
+[INFO 17:52:59] my_main Updated target network
+[INFO 17:54:15] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/386410
+[INFO 17:54:52] my_main Updated target network
+[INFO 17:55:27] my_main Recent Stats | t_env:     390605 | Episode:    11264
+battle_won_mean:           0.9743	ep_length_mean:           32.1994	epsilon:                   0.0500	grad_norm:                 2.3593
+loss_td:                   0.0675	q_taken_mean:              6.8539	return_mean:              19.6747	return_std:                2.0115
+target_mean:               6.8242	td_error_abs:              0.0675	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.6562
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:55:30] my_main t_env: 390793 / 1005000
+[INFO 17:55:30] my_main Estimated time left: 3 hours, 7 minutes, 19 seconds. Time passed: 2 hours, 14 minutes, 37 seconds
+[INFO 17:55:54] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/391436
+[INFO 17:56:59] my_main Updated target network
+[INFO 17:57:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/396447
+[INFO 17:58:33] my_main Recent Stats | t_env:     400612 | Episode:    11563
+battle_won_mean:           0.9574	ep_length_mean:           32.8820	epsilon:                   0.0500	grad_norm:                 1.2224
+loss_td:                   0.0489	q_taken_mean:              6.8169	return_mean:              19.4600	return_std:                2.5914
+target_mean:               6.8440	td_error_abs:              0.0489	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.1562
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 17:58:36] my_main t_env: 400796 / 1005000
+[INFO 17:58:36] my_main Estimated time left: 3 hours, 7 minutes, 11 seconds. Time passed: 2 hours, 17 minutes, 43 seconds
+[INFO 17:59:00] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/401457
+[INFO 17:59:08] my_main Updated target network
+[INFO 18:00:30] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/406474
+[INFO 18:01:01] my_main Updated target network
+[INFO 18:01:44] my_main Recent Stats | t_env:     410633 | Episode:    11876
+battle_won_mean:           0.9732	ep_length_mean:           33.5671	epsilon:                   0.0500	grad_norm:                 0.7057
+loss_td:                   0.0449	q_taken_mean:              6.8172	return_mean:              19.6764	return_std:                1.9498
+target_mean:               6.8013	td_error_abs:              0.0449	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.2500
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:01:47] my_main t_env: 410819 / 1005000
+[INFO 18:01:47] my_main Estimated time left: 3 hours, 8 minutes, 30 seconds. Time passed: 2 hours, 20 minutes, 54 seconds
+[INFO 18:02:12] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/411503
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:42886 disconnected
+[INFO 18:02:15] absl Shutdown gracefully.
+[INFO 18:02:15] absl Shutdown with return code: -15
+[INFO 18:02:15] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 46149 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-hjkslg4y/
+[INFO 18:02:16] absl Connecting to: ws://127.0.0.1:46149/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 46149 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-hjkslg4y/'
+Starting up...
+Startup Phase 1 complete
+[INFO 18:02:17] absl Connecting to: ws://127.0.0.1:46149/sc2api, attempt: 1, running: True
+[INFO 18:02:18] absl Connecting to: ws://127.0.0.1:46149/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 18:02:19] absl Connecting to: ws://127.0.0.1:46149/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:46149
+Startup Phase 3 complete. Ready for commands.
+[INFO 18:02:20] absl Connecting to: ws://127.0.0.1:46149/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:46114 accepted
+ReadyHandler: 127.0.0.1:46114 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 18:03:16] my_main Updated target network
+[INFO 18:03:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/416532
+[INFO 18:04:58] my_main Recent Stats | t_env:     420648 | Episode:    12183
+battle_won_mean:           0.9713	ep_length_mean:           31.9204	epsilon:                   0.0500	grad_norm:                 1.2615
+loss_td:                   0.0627	q_taken_mean:              6.7615	return_mean:              19.6226	return_std:                2.2121
+target_mean:               6.7857	td_error_abs:              0.0627	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.8750
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:05:01] my_main t_env: 420851 / 1005000
+[INFO 18:05:01] my_main Estimated time left: 3 hours, 8 minutes, 34 seconds. Time passed: 2 hours, 24 minutes, 8 seconds
+[INFO 18:05:20] my_main Updated target network
+[INFO 18:05:24] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/421541
+[INFO 18:06:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/426549
+[INFO 18:07:03] my_main Updated target network
+[INFO 18:07:51] my_main Recent Stats | t_env:     430660 | Episode:    12493
+battle_won_mean:           0.9674	ep_length_mean:           32.6775	epsilon:                   0.0500	grad_norm:                 0.4278
+loss_td:                   0.0338	q_taken_mean:              6.7415	return_mean:              19.5901	return_std:                2.2541
+target_mean:               6.7461	td_error_abs:              0.0338	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.4688
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:07:54] my_main t_env: 430855 / 1005000
+[INFO 18:07:54] my_main Estimated time left: 2 hours, 45 minutes, 32 seconds. Time passed: 2 hours, 27 minutes, 1 seconds
+[INFO 18:08:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/431571
+[INFO 18:09:04] my_main Updated target network
+[INFO 18:09:43] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/436585
+[INFO 18:10:48] my_main Updated target network
+[INFO 18:10:48] my_main Recent Stats | t_env:     440666 | Episode:    12801
+battle_won_mean:           0.9903	ep_length_mean:           32.2710	epsilon:                   0.0500	grad_norm:                 0.8906
+loss_td:                   0.0487	q_taken_mean:              6.6728	return_mean:              19.8771	return_std:                1.2445
+target_mean:               6.6881	td_error_abs:              0.0487	test_battle_won_mean:      1.0000	test_ep_length_mean:      32.3438
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:10:52] my_main t_env: 440862 / 1005000
+[INFO 18:10:52] my_main Estimated time left: 2 hours, 46 minutes, 30 seconds. Time passed: 2 hours, 29 minutes, 59 seconds
+[INFO 18:11:15] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/441586
+[INFO 18:12:39] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/446601
+[INFO 18:12:53] my_main Updated target network
+[INFO 18:13:45] my_main Recent Stats | t_env:     450676 | Episode:    13100
+battle_won_mean:           0.9968	ep_length_mean:           32.4903	epsilon:                   0.0500	grad_norm:                 0.5678
+loss_td:                   0.0452	q_taken_mean:              6.7713	return_mean:              19.9536	return_std:                0.8122
+target_mean:               6.7830	td_error_abs:              0.0452	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.1875
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:13:48] my_main t_env: 450877 / 1005000
+[INFO 18:13:48] my_main Estimated time left: 2 hours, 42 minutes, 49 seconds. Time passed: 2 hours, 32 minutes, 55 seconds
+[INFO 18:14:12] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/451611
+[INFO 18:14:52] my_main Updated target network
+[INFO 18:15:37] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/456623
+[INFO 18:16:44] my_main Updated target network
+[INFO 18:16:47] my_main Recent Stats | t_env:     460680 | Episode:    13407
+battle_won_mean:           0.9833	ep_length_mean:           33.4950	epsilon:                   0.0500	grad_norm:                 0.5229
+loss_td:                   0.0421	q_taken_mean:              6.7536	return_mean:              19.7910	return_std:                1.6075
+target_mean:               6.7611	td_error_abs:              0.0421	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.4062
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:16:51] my_main t_env: 460880 / 1005000
+[INFO 18:16:51] my_main Estimated time left: 2 hours, 45 minutes, 19 seconds. Time passed: 2 hours, 35 minutes, 58 seconds
+[INFO 18:17:15] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/461643
+[INFO 18:18:37] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/466672
+[INFO 18:18:43] my_main Updated target network
+[INFO 18:19:39] my_main Recent Stats | t_env:     470686 | Episode:    13707
+battle_won_mean:           0.9772	ep_length_mean:           32.5831	epsilon:                   0.0500	grad_norm:                 0.8023
+loss_td:                   0.0315	q_taken_mean:              6.7234	return_mean:              19.7153	return_std:                1.8730
+target_mean:               6.7355	td_error_abs:              0.0315	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.5625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:19:42] my_main t_env: 470880 / 1005000
+[INFO 18:19:42] my_main Estimated time left: 2 hours, 32 minutes, 40 seconds. Time passed: 2 hours, 38 minutes, 49 seconds
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:46114 disconnected
+[INFO 18:19:55] absl Shutdown gracefully.
+[INFO 18:19:55] absl Shutdown with return code: -15
+[INFO 18:19:55] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 34591 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-9g34neen/
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+[INFO 18:19:55] absl Connecting to: ws://127.0.0.1:34591/sc2api, attempt: 0, running: True
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 34591 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-9g34neen/'
+Starting up...
+Startup Phase 1 complete
+[INFO 18:19:56] absl Connecting to: ws://127.0.0.1:34591/sc2api, attempt: 1, running: True
+[INFO 18:19:57] absl Connecting to: ws://127.0.0.1:34591/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 18:19:58] absl Connecting to: ws://127.0.0.1:34591/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:34591
+Startup Phase 3 complete. Ready for commands.
+[INFO 18:19:59] absl Connecting to: ws://127.0.0.1:34591/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:47534 accepted
+ReadyHandler: 127.0.0.1:47534 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 18:20:24] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/471679
+[INFO 18:21:02] my_main Updated target network
+[INFO 18:21:49] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/476704
+[INFO 18:22:54] my_main Updated target network
+[INFO 18:22:55] my_main Recent Stats | t_env:     480692 | Episode:    14002
+battle_won_mean:           0.9666	ep_length_mean:           33.4448	epsilon:                   0.0500	grad_norm:                 1.1797
+loss_td:                   0.0520	q_taken_mean:              6.6345	return_mean:              19.5810	return_std:                2.2602
+target_mean:               6.6596	td_error_abs:              0.0520	test_battle_won_mean:      0.9375	test_ep_length_mean:      40.4688
+test_return_mean:         19.1771	test_return_std:           3.2060	
+[INFO 18:22:59] my_main t_env: 480888 / 1005000
+[INFO 18:22:59] my_main Estimated time left: 2 hours, 51 minutes, 38 seconds. Time passed: 2 hours, 42 minutes, 6 seconds
+[INFO 18:23:23] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/481712
+[INFO 18:24:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/486743
+[INFO 18:24:51] my_main Updated target network
+[INFO 18:25:53] my_main Recent Stats | t_env:     490718 | Episode:    14315
+battle_won_mean:           0.9628	ep_length_mean:           33.8108	epsilon:                   0.0500	grad_norm:                 0.5244
+loss_td:                   0.0284	q_taken_mean:              6.7242	return_mean:              19.5568	return_std:                2.2694
+target_mean:               6.7108	td_error_abs:              0.0284	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.8750
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:25:56] my_main t_env: 490908 / 1005000
+[INFO 18:25:56] my_main Estimated time left: 2 hours, 31 minutes, 50 seconds. Time passed: 2 hours, 45 minutes, 3 seconds
+[INFO 18:26:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/491746
+[INFO 18:26:50] my_main Updated target network
+[INFO 18:27:41] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/496764
+[INFO 18:28:36] my_main Updated target network
+[INFO 18:28:43] my_main Recent Stats | t_env:     500721 | Episode:    14615
+battle_won_mean:           0.9936	ep_length_mean:           32.0128	epsilon:                   0.0500	grad_norm:                 0.6963
+loss_td:                   0.0644	q_taken_mean:              6.6810	return_mean:              19.9239	return_std:                0.9496
+target_mean:               6.6696	td_error_abs:              0.0644	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.2188
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:28:45] my_main t_env: 500919 / 1005000
+[INFO 18:28:45] my_main Estimated time left: 2 hours, 21 minutes, 59 seconds. Time passed: 2 hours, 47 minutes, 52 seconds
+[INFO 18:29:12] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/501788
+[INFO 18:30:40] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/506805
+[INFO 18:30:40] my_main Updated target network
+[INFO 18:31:47] my_main Recent Stats | t_env:     510736 | Episode:    14921
+battle_won_mean:           0.9633	ep_length_mean:           33.3700	epsilon:                   0.0500	grad_norm:                 0.4442
+loss_td:                   0.0149	q_taken_mean:              6.7874	return_mean:              19.5459	return_std:                2.3421
+target_mean:               6.7972	td_error_abs:              0.0149	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.6875
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:31:49] my_main t_env: 510930 / 1005000
+[INFO 18:31:49] my_main Estimated time left: 2 hours, 31 minutes, 23 seconds. Time passed: 2 hours, 50 minutes, 57 seconds
+[INFO 18:32:16] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/511826
+[INFO 18:32:39] my_main Updated target network
+[INFO 18:33:40] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/516851
+[INFO 18:34:36] my_main Updated target network
+[INFO 18:34:45] my_main Recent Stats | t_env:     520748 | Episode:    15215
+battle_won_mean:           0.9837	ep_length_mean:           32.7157	epsilon:                   0.0500	grad_norm:                 0.3571
+loss_td:                   0.0236	q_taken_mean:              6.7819	return_mean:              19.7958	return_std:                1.5866
+target_mean:               6.7862	td_error_abs:              0.0236	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.6250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:34:48] my_main t_env: 520971 / 1005000
+[INFO 18:34:48] my_main Estimated time left: 2 hours, 23 minutes, 37 seconds. Time passed: 2 hours, 53 minutes, 55 seconds
+[INFO 18:35:19] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/521869
+[INFO 18:36:42] my_main Updated target network
+[INFO 18:36:44] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/526870
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:47534 disconnected
+[INFO 18:37:42] absl Shutdown gracefully.
+[INFO 18:37:42] absl Shutdown with return code: -15
+[INFO 18:37:42] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 40675 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-z57c2cze/
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+[INFO 18:37:42] absl Connecting to: ws://127.0.0.1:40675/sc2api, attempt: 0, running: True
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 40675 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-z57c2cze/'
+Starting up...
+Startup Phase 1 complete
+[INFO 18:37:43] absl Connecting to: ws://127.0.0.1:40675/sc2api, attempt: 1, running: True
+[INFO 18:37:44] absl Connecting to: ws://127.0.0.1:40675/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 18:37:45] absl Connecting to: ws://127.0.0.1:40675/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:40675
+Startup Phase 3 complete. Ready for commands.
+[INFO 18:37:46] absl Connecting to: ws://127.0.0.1:40675/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:39900 accepted
+ReadyHandler: 127.0.0.1:39900 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 18:38:02] my_main Recent Stats | t_env:     530763 | Episode:    15523
+battle_won_mean:           0.9625	ep_length_mean:           34.2696	epsilon:                   0.0500	grad_norm:                 0.8145
+loss_td:                   0.0278	q_taken_mean:              6.7531	return_mean:              19.5379	return_std:                2.4022
+target_mean:               6.7302	td_error_abs:              0.0278	test_battle_won_mean:      0.9688	test_ep_length_mean:      40.8125
+test_return_mean:         19.6319	test_return_std:           2.0492	
+[INFO 18:38:05] my_main t_env: 530992 / 1005000
+[INFO 18:38:05] my_main Estimated time left: 2 hours, 35 minutes, 23 seconds. Time passed: 2 hours, 57 minutes, 12 seconds
+[INFO 18:38:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/531872
+[INFO 18:38:57] my_main Updated target network
+[INFO 18:39:58] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/536893
+[INFO 18:40:52] my_main Updated target network
+[INFO 18:41:04] my_main Recent Stats | t_env:     540775 | Episode:    15821
+battle_won_mean:           0.9871	ep_length_mean:           32.3258	epsilon:                   0.0500	grad_norm:                 1.6256
+loss_td:                   0.1028	q_taken_mean:              6.8039	return_mean:              19.8097	return_std:                1.6854
+target_mean:               6.7870	td_error_abs:              0.1028	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.6875
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:41:07] my_main t_env: 540995 / 1005000
+[INFO 18:41:07] my_main Estimated time left: 2 hours, 20 minutes, 35 seconds. Time passed: 3 hours, 14 seconds
+[INFO 18:41:37] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/541922
+[INFO 18:43:01] my_main Updated target network
+[INFO 18:43:03] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/546950
+[INFO 18:44:06] my_main Recent Stats | t_env:     550799 | Episode:    16118
+battle_won_mean:           0.9866	ep_length_mean:           33.5671	epsilon:                   0.0500	grad_norm:                 0.3688
+loss_td:                   0.0211	q_taken_mean:              6.8338	return_mean:              19.8345	return_std:                1.4237
+target_mean:               6.8326	td_error_abs:              0.0211	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.0938
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:44:09] my_main t_env: 550996 / 1005000
+[INFO 18:44:09] my_main Estimated time left: 2 hours, 17 minutes, 35 seconds. Time passed: 3 hours, 3 minutes, 16 seconds
+[INFO 18:44:42] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/551968
+[INFO 18:45:10] my_main Updated target network
+[INFO 18:46:05] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/556990
+[INFO 18:47:05] my_main Updated target network
+[INFO 18:47:08] my_main Recent Stats | t_env:     560807 | Episode:    16405
+battle_won_mean:           0.9696	ep_length_mean:           33.7872	epsilon:                   0.0500	grad_norm:                 0.9190
+loss_td:                   0.0533	q_taken_mean:              6.7592	return_mean:              19.6316	return_std:                2.0828
+target_mean:               6.7691	td_error_abs:              0.0533	test_battle_won_mean:      0.9375	test_ep_length_mean:      43.1250
+test_return_mean:         19.4201	test_return_std:           2.2458	
+[INFO 18:47:11] my_main t_env: 561002 / 1005000
+[INFO 18:47:11] my_main Estimated time left: 2 hours, 14 minutes, 48 seconds. Time passed: 3 hours, 6 minutes, 18 seconds
+[INFO 18:47:41] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/562012
+[INFO 18:49:05] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/567047
+[INFO 18:49:10] my_main Updated target network
+[INFO 18:50:07] my_main Recent Stats | t_env:     570822 | Episode:    16705
+battle_won_mean:           0.9895	ep_length_mean:           34.8641	epsilon:                   0.0500	grad_norm:                 0.4345
+loss_td:                   0.0191	q_taken_mean:              6.8535	return_mean:              19.8759	return_std:                1.2073
+target_mean:               6.8562	td_error_abs:              0.0191	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.3125
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:50:10] my_main t_env: 571028 / 1005000
+[INFO 18:50:10] my_main Estimated time left: 2 hours, 8 minutes, 55 seconds. Time passed: 3 hours, 9 minutes, 17 seconds
+[INFO 18:50:41] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/572079
+[INFO 18:51:13] my_main Updated target network
+[INFO 18:52:04] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/577102
+[INFO 18:53:06] my_main Updated target network
+[INFO 18:53:09] my_main Recent Stats | t_env:     580853 | Episode:    17005
+battle_won_mean:           0.9767	ep_length_mean:           33.4200	epsilon:                   0.0500	grad_norm:                 1.4405
+loss_td:                   0.0622	q_taken_mean:              6.6566	return_mean:              19.7122	return_std:                1.8638
+target_mean:               6.6424	td_error_abs:              0.0622	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.2812
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:53:12] my_main t_env: 581057 / 1005000
+[INFO 18:53:12] my_main Estimated time left: 2 hours, 8 minutes, 29 seconds. Time passed: 3 hours, 12 minutes, 19 seconds
+[INFO 18:53:44] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/582121
+[INFO 18:55:04] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/587133
+[INFO 18:55:10] my_main Updated target network
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:39900 disconnected
+[INFO 18:55:36] absl Shutdown gracefully.
+[INFO 18:55:36] absl Shutdown with return code: -15
+[INFO 18:55:36] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 41099 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-87yjfydy/
+[INFO 18:55:36] absl Connecting to: ws://127.0.0.1:41099/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41099 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-87yjfydy/'
+Starting up...
+Startup Phase 1 complete
+[INFO 18:55:37] absl Connecting to: ws://127.0.0.1:41099/sc2api, attempt: 1, running: True
+[INFO 18:55:38] absl Connecting to: ws://127.0.0.1:41099/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 18:55:39] absl Connecting to: ws://127.0.0.1:41099/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:41099
+Startup Phase 3 complete. Ready for commands.
+[INFO 18:55:40] absl Connecting to: ws://127.0.0.1:41099/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:33312 accepted
+ReadyHandler: 127.0.0.1:33312 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 18:56:18] my_main Recent Stats | t_env:     590878 | Episode:    17297
+battle_won_mean:           0.9767	ep_length_mean:           33.4300	epsilon:                   0.0500	grad_norm:                 0.4477
+loss_td:                   0.0429	q_taken_mean:              6.8346	return_mean:              19.7131	return_std:                1.8603
+target_mean:               6.8326	td_error_abs:              0.0429	test_battle_won_mean:      0.9688	test_ep_length_mean:      34.3125
+test_return_mean:         19.7109	test_return_std:           1.6094	
+[INFO 18:56:22] my_main t_env: 591091 / 1005000
+[INFO 18:56:22] my_main Estimated time left: 2 hours, 10 minutes, 33 seconds. Time passed: 3 hours, 15 minutes, 29 seconds
+[INFO 18:56:54] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/592146
+[INFO 18:57:32] my_main Updated target network
+[INFO 18:58:18] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/597160
+[INFO 18:59:20] my_main Recent Stats | t_env:     600889 | Episode:    17591
+battle_won_mean:           0.9589	ep_length_mean:           34.3630	epsilon:                   0.0500	grad_norm:                 0.9033
+loss_td:                   0.0384	q_taken_mean:              6.7429	return_mean:              19.5202	return_std:                2.3816
+target_mean:               6.7644	td_error_abs:              0.0384	test_battle_won_mean:      1.0000	test_ep_length_mean:      34.5000
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 18:59:24] my_main t_env: 601121 / 1005000
+[INFO 18:59:24] my_main Estimated time left: 2 hours, 2 minutes, 3 seconds. Time passed: 3 hours, 18 minutes, 31 seconds
+[INFO 18:59:40] my_main Updated target network
+[INFO 18:59:56] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/602188
+[INFO 19:01:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/607219
+[INFO 19:01:32] my_main Updated target network
+[INFO 19:02:22] my_main Recent Stats | t_env:     610911 | Episode:    17889
+battle_won_mean:           0.9695	ep_length_mean:           34.0000	epsilon:                   0.0500	grad_norm:                 0.4352
+loss_td:                   0.0372	q_taken_mean:              6.7999	return_mean:              19.6294	return_std:                2.0911
+target_mean:               6.8031	td_error_abs:              0.0372	test_battle_won_mean:      1.0000	test_ep_length_mean:      33.3750
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:02:26] my_main t_env: 611164 / 1005000
+[INFO 19:02:26] my_main Estimated time left: 1 hours, 58 minutes, 55 seconds. Time passed: 3 hours, 21 minutes, 33 seconds
+[INFO 19:02:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/612250
+[INFO 19:03:40] my_main Updated target network
+[INFO 19:04:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/617263
+[INFO 19:05:21] my_main Recent Stats | t_env:     620940 | Episode:    18180
+battle_won_mean:           0.9631	ep_length_mean:           33.7013	epsilon:                   0.0500	grad_norm:                 0.7359
+loss_td:                   0.0955	q_taken_mean:              6.6460	return_mean:              19.5419	return_std:                2.3429
+target_mean:               6.6395	td_error_abs:              0.0955	test_battle_won_mean:      0.9688	test_ep_length_mean:      38.5000
+test_return_mean:         19.6319	test_return_std:           2.0492	
+[INFO 19:05:25] my_main t_env: 621185 / 1005000
+[INFO 19:05:25] my_main Estimated time left: 1 hours, 54 minutes, 16 seconds. Time passed: 3 hours, 24 minutes, 32 seconds
+[INFO 19:05:46] my_main Updated target network
+[INFO 19:05:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/622267
+[INFO 19:07:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/627300
+[INFO 19:07:41] my_main Updated target network
+[INFO 19:08:20] my_main Recent Stats | t_env:     630967 | Episode:    18472
+battle_won_mean:           0.9486	ep_length_mean:           34.3185	epsilon:                   0.0500	grad_norm:                 0.6757
+loss_td:                   0.0308	q_taken_mean:              6.8003	return_mean:              19.3645	return_std:                2.7365
+target_mean:               6.8173	td_error_abs:              0.0308	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.3438
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:08:24] my_main t_env: 631196 / 1005000
+[INFO 19:08:24] my_main Estimated time left: 1 hours, 51 minutes, 19 seconds. Time passed: 3 hours, 27 minutes, 31 seconds
+[INFO 19:08:54] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/632324
+[INFO 19:09:44] my_main Updated target network
+[INFO 19:10:14] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/637334
+[INFO 19:10:58] my_main Recent Stats | t_env:     641000 | Episode:    18777
+battle_won_mean:           0.9553	ep_length_mean:           34.4021	epsilon:                   0.0500	grad_norm:                 1.7565
+loss_td:                   0.0533	q_taken_mean:              6.8172	return_mean:              19.4519	return_std:                2.5397
+target_mean:               6.8437	td_error_abs:              0.0533	test_battle_won_mean:      0.9375	test_ep_length_mean:      30.7812
+test_return_mean:         19.2639	test_return_std:           2.8509	
+[INFO 19:11:00] my_main t_env: 641224 / 1005000
+[INFO 19:11:00] my_main Estimated time left: 1 hours, 34 minutes, 30 seconds. Time passed: 3 hours, 30 minutes, 7 seconds
+[INFO 19:11:15] my_main Updated target network
+[INFO 19:11:22] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/642363
+[INFO 19:12:21] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/647370
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:33312 disconnected
+[INFO 19:12:25] absl Shutdown gracefully.
+[INFO 19:12:25] absl Shutdown with return code: -15
+[INFO 19:12:25] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 46619 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-79eodzkh/
+[INFO 19:12:25] absl Connecting to: ws://127.0.0.1:46619/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 46619 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-79eodzkh/'
+Starting up...
+Startup Phase 1 complete
+[INFO 19:12:26] absl Connecting to: ws://127.0.0.1:46619/sc2api, attempt: 1, running: True
+[INFO 19:12:27] absl Connecting to: ws://127.0.0.1:46619/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 19:12:28] absl Connecting to: ws://127.0.0.1:46619/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:46619
+Startup Phase 3 complete. Ready for commands.
+[INFO 19:12:29] absl Connecting to: ws://127.0.0.1:46619/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:57556 accepted
+ReadyHandler: 127.0.0.1:57556 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 19:12:46] my_main Updated target network
+[INFO 19:13:16] my_main Recent Stats | t_env:     651005 | Episode:    19079
+battle_won_mean:           0.9902	ep_length_mean:           32.8787	epsilon:                   0.0500	grad_norm:                 0.5449
+loss_td:                   0.0320	q_taken_mean:              6.8767	return_mean:              19.8705	return_std:                1.3070
+target_mean:               6.8629	td_error_abs:              0.0320	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.0938
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:13:19] my_main t_env: 651249 / 1005000
+[INFO 19:13:19] my_main Estimated time left: 1 hours, 21 minutes, 21 seconds. Time passed: 3 hours, 32 minutes, 26 seconds
+[INFO 19:13:41] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/652380
+[INFO 19:14:13] my_main Updated target network
+[INFO 19:14:40] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/657391
+[INFO 19:15:22] my_main Recent Stats | t_env:     661015 | Episode:    19379
+battle_won_mean:           0.9768	ep_length_mean:           33.1954	epsilon:                   0.0500	grad_norm:                 0.3869
+loss_td:                   0.0393	q_taken_mean:              6.8347	return_mean:              19.7123	return_std:                1.8729
+target_mean:               6.8370	td_error_abs:              0.0393	test_battle_won_mean:      1.0000	test_ep_length_mean:      33.5625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:15:25] my_main t_env: 661276 / 1005000
+[INFO 19:15:25] my_main Estimated time left: 1 hours, 12 minutes, 16 seconds. Time passed: 3 hours, 34 minutes, 32 seconds
+[INFO 19:15:39] my_main Updated target network
+[INFO 19:15:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/662418
+[INFO 19:16:45] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/667418
+[INFO 19:16:56] my_main Updated target network
+[INFO 19:17:27] my_main Recent Stats | t_env:     671039 | Episode:    19680
+battle_won_mean:           0.9867	ep_length_mean:           33.3123	epsilon:                   0.0500	grad_norm:                 1.3417
+loss_td:                   0.0848	q_taken_mean:              6.7672	return_mean:              19.8453	return_std:                1.3423
+target_mean:               6.8000	td_error_abs:              0.0848	test_battle_won_mean:      0.9688	test_ep_length_mean:      32.0000
+test_return_mean:         19.6319	test_return_std:           2.0492	
+[INFO 19:17:29] my_main t_env: 671288 / 1005000
+[INFO 19:17:29] my_main Estimated time left: 1 hours, 8 minutes, 59 seconds. Time passed: 3 hours, 36 minutes, 36 seconds
+[INFO 19:17:50] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/672427
+[INFO 19:18:22] my_main Updated target network
+[INFO 19:18:47] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/677453
+[INFO 19:19:29] my_main Recent Stats | t_env:     681065 | Episode:    19980
+battle_won_mean:           0.9867	ep_length_mean:           33.2625	epsilon:                   0.0500	grad_norm:                 0.7624
+loss_td:                   0.0425	q_taken_mean:              6.5807	return_mean:              19.8217	return_std:                1.5482
+target_mean:               6.5732	td_error_abs:              0.0425	test_battle_won_mean:      1.0000	test_ep_length_mean:      29.7188
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:19:32] my_main t_env: 681315 / 1005000
+[INFO 19:19:32] my_main Estimated time left: 1 hours, 5 minutes, 59 seconds. Time passed: 3 hours, 38 minutes, 39 seconds
+[INFO 19:19:45] my_main Updated target network
+[INFO 19:19:54] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/682479
+[INFO 19:20:53] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/687507
+[INFO 19:21:04] my_main Updated target network
+[INFO 19:21:33] my_main Recent Stats | t_env:     691072 | Episode:    20276
+battle_won_mean:           0.9567	ep_length_mean:           33.4233	epsilon:                   0.0500	grad_norm:                 1.9450
+loss_td:                   0.0411	q_taken_mean:              6.6968	return_mean:              19.4761	return_std:                2.4879
+target_mean:               6.7206	td_error_abs:              0.0411	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.3750
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:21:36] my_main t_env: 691335 / 1005000
+[INFO 19:21:36] my_main Estimated time left: 1 hours, 4 minutes, 23 seconds. Time passed: 3 hours, 40 minutes, 43 seconds
+[INFO 19:21:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/692522
+[INFO 19:22:28] my_main Updated target network
+[INFO 19:22:54] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/697533
+[INFO 19:23:37] my_main Recent Stats | t_env:     701084 | Episode:    20573
+battle_won_mean:           0.9831	ep_length_mean:           33.8514	epsilon:                   0.0500	grad_norm:                 0.5509
+loss_td:                   0.0428	q_taken_mean:              6.7876	return_mean:              19.7982	return_std:                1.5395
+target_mean:               6.7809	td_error_abs:              0.0428	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.6250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:23:40] my_main t_env: 701364 / 1005000
+[INFO 19:23:40] my_main Estimated time left: 1 hours, 2 minutes, 49 seconds. Time passed: 3 hours, 42 minutes, 47 seconds
+[INFO 19:23:57] my_main Updated target network
+[INFO 19:24:02] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/702550
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:57556 disconnected
+[INFO 19:24:52] absl Shutdown gracefully.
+[INFO 19:24:52] absl Shutdown with return code: -15
+[INFO 19:24:52] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 33513 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-xezpk8cl/
+[INFO 19:24:52] absl Connecting to: ws://127.0.0.1:33513/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 33513 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-xezpk8cl/'
+Starting up...
+Startup Phase 1 complete
+[INFO 19:24:53] absl Connecting to: ws://127.0.0.1:33513/sc2api, attempt: 1, running: True
+[INFO 19:24:54] absl Connecting to: ws://127.0.0.1:33513/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 19:24:55] absl Connecting to: ws://127.0.0.1:33513/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:33513
+Startup Phase 3 complete. Ready for commands.
+[INFO 19:24:56] absl Connecting to: ws://127.0.0.1:33513/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:37780 accepted
+ReadyHandler: 127.0.0.1:37780 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 19:25:15] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/707573
+[INFO 19:25:31] my_main Updated target network
+[INFO 19:25:56] my_main Recent Stats | t_env:     711098 | Episode:    20864
+battle_won_mean:           0.9664	ep_length_mean:           33.6544	epsilon:                   0.0500	grad_norm:                 1.6788
+loss_td:                   0.0623	q_taken_mean:              6.7563	return_mean:              19.6152	return_std:                2.1673
+target_mean:               6.7452	td_error_abs:              0.0623	test_battle_won_mean:      1.0000	test_ep_length_mean:      32.0625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:26:00] my_main t_env: 711395 / 1005000
+[INFO 19:26:00] my_main Estimated time left: 1 hours, 8 minutes, 12 seconds. Time passed: 3 hours, 45 minutes, 7 seconds
+[INFO 19:26:22] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/712603
+[INFO 19:26:59] my_main Updated target network
+[INFO 19:27:20] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/717630
+[INFO 19:28:01] my_main Recent Stats | t_env:     721115 | Episode:    21164
+battle_won_mean:           0.9759	ep_length_mean:           34.4708	epsilon:                   0.0500	grad_norm:                 0.6419
+loss_td:                   0.0744	q_taken_mean:              6.6486	return_mean:              19.6967	return_std:                1.9496
+target_mean:               6.6592	td_error_abs:              0.0744	test_battle_won_mean:      1.0000	test_ep_length_mean:      33.5938
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:28:04] my_main t_env: 721411 / 1005000
+[INFO 19:28:04] my_main Estimated time left: 58 minutes, 35 seconds. Time passed: 3 hours, 47 minutes, 11 seconds
+[INFO 19:28:23] my_main Updated target network
+[INFO 19:28:27] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/722639
+[INFO 19:29:27] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/727653
+[INFO 19:29:40] my_main Updated target network
+[INFO 19:30:08] my_main Recent Stats | t_env:     731142 | Episode:    21473
+battle_won_mean:           0.9367	ep_length_mean:           33.3867	epsilon:                   0.0500	grad_norm:                 0.9176
+loss_td:                   0.0497	q_taken_mean:              6.6164	return_mean:              19.2235	return_std:                2.9922
+target_mean:               6.5926	td_error_abs:              0.0497	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.5938
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:30:12] my_main t_env: 731414 / 1005000
+[INFO 19:30:12] my_main Estimated time left: 58 minutes, 19 seconds. Time passed: 3 hours, 49 minutes, 19 seconds
+[INFO 19:30:34] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/732664
+[INFO 19:31:04] my_main Updated target network
+[INFO 19:31:34] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/737686
+[INFO 19:32:14] my_main Recent Stats | t_env:     741173 | Episode:    21774
+battle_won_mean:           0.9675	ep_length_mean:           32.4773	epsilon:                   0.0500	grad_norm:                 0.7046
+loss_td:                   0.0541	q_taken_mean:              6.6978	return_mean:              19.6050	return_std:                2.1580
+target_mean:               6.6922	td_error_abs:              0.0541	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.7812
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:32:17] my_main t_env: 741430 / 1005000
+[INFO 19:32:17] my_main Estimated time left: 54 minutes, 55 seconds. Time passed: 3 hours, 51 minutes, 24 seconds
+[INFO 19:32:33] my_main Updated target network
+[INFO 19:32:40] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/742694
+[INFO 19:33:40] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/747714
+[INFO 19:33:50] my_main Updated target network
+[INFO 19:34:20] my_main Recent Stats | t_env:     751202 | Episode:    22075
+battle_won_mean:           0.9701	ep_length_mean:           33.2757	epsilon:                   0.0500	grad_norm:                 0.6123
+loss_td:                   0.0567	q_taken_mean:              6.6288	return_mean:              19.6229	return_std:                2.1496
+target_mean:               6.6247	td_error_abs:              0.0567	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.4062
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:34:23] my_main t_env: 751434 / 1005000
+[INFO 19:34:23] my_main Estimated time left: 53 minutes, 18 seconds. Time passed: 3 hours, 53 minutes, 30 seconds
+[INFO 19:34:48] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/752742
+[INFO 19:35:20] my_main Updated target network
+[INFO 19:35:49] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/757753
+[INFO 19:36:30] my_main Recent Stats | t_env:     761205 | Episode:    22378
+battle_won_mean:           0.9700	ep_length_mean:           33.3467	epsilon:                   0.0500	grad_norm:                 0.8692
+loss_td:                   0.0776	q_taken_mean:              6.6470	return_mean:              19.6105	return_std:                2.2289
+target_mean:               6.6422	td_error_abs:              0.0776	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.5625
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:36:33] my_main t_env: 761436 / 1005000
+[INFO 19:36:33] my_main Estimated time left: 52 minutes, 30 seconds. Time passed: 3 hours, 55 minutes, 40 seconds
+[INFO 19:36:48] my_main Updated target network
+[INFO 19:36:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/762775
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:37780 disconnected
+[INFO 19:37:33] absl Shutdown gracefully.
+[INFO 19:37:33] absl Shutdown with return code: -15
+[INFO 19:37:33] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 38715 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-yef4l3sl/
+[INFO 19:37:33] absl Connecting to: ws://127.0.0.1:38715/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 38715 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-yef4l3sl/'
+Starting up...
+Startup Phase 1 complete
+[INFO 19:37:34] absl Connecting to: ws://127.0.0.1:38715/sc2api, attempt: 1, running: True
+[INFO 19:37:35] absl Connecting to: ws://127.0.0.1:38715/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 19:37:36] absl Connecting to: ws://127.0.0.1:38715/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:38715
+Startup Phase 3 complete. Ready for commands.
+[INFO 19:37:37] absl Connecting to: ws://127.0.0.1:38715/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:36720 accepted
+ReadyHandler: 127.0.0.1:36720 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 19:38:06] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/767783
+[INFO 19:38:23] my_main Updated target network
+[INFO 19:38:46] my_main Recent Stats | t_env:     771237 | Episode:    22661
+battle_won_mean:           0.9868	ep_length_mean:           33.0099	epsilon:                   0.0500	grad_norm:                 1.7322
+loss_td:                   0.1140	q_taken_mean:              6.7425	return_mean:              19.8354	return_std:                1.4265
+target_mean:               6.7098	td_error_abs:              0.1140	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.3125
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:38:48] my_main t_env: 771441 / 1005000
+[INFO 19:38:48] my_main Estimated time left: 52 minutes, 44 seconds. Time passed: 3 hours, 57 minutes, 55 seconds
+[INFO 19:39:14] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/772806
+[INFO 19:39:52] my_main Updated target network
+[INFO 19:40:16] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/777836
+[INFO 19:40:57] my_main Recent Stats | t_env:     781248 | Episode:    22965
+battle_won_mean:           0.9433	ep_length_mean:           35.4787	epsilon:                   0.0500	grad_norm:                 0.5422
+loss_td:                   0.0548	q_taken_mean:              6.6664	return_mean:              19.2921	return_std:                2.9294
+target_mean:               6.6747	td_error_abs:              0.0548	test_battle_won_mean:      0.9375	test_ep_length_mean:      34.3438
+test_return_mean:         19.1944	test_return_std:           3.1207	
+[INFO 19:41:00] my_main t_env: 781471 / 1005000
+[INFO 19:41:00] my_main Estimated time left: 48 minutes, 57 seconds. Time passed: 4 hours, 7 seconds
+[INFO 19:41:20] my_main Updated target network
+[INFO 19:41:26] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/782859
+[INFO 19:42:25] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/787871
+[INFO 19:42:38] my_main Updated target network
+[INFO 19:43:05] my_main Recent Stats | t_env:     791279 | Episode:    23269
+battle_won_mean:           0.9836	ep_length_mean:           32.8852	epsilon:                   0.0500	grad_norm:                 0.8550
+loss_td:                   0.0307	q_taken_mean:              6.7557	return_mean:              19.8005	return_std:                1.5482
+target_mean:               6.7292	td_error_abs:              0.0307	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.6250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:43:07] my_main t_env: 791472 / 1005000
+[INFO 19:43:07] my_main Estimated time left: 45 minutes, 5 seconds. Time passed: 4 hours, 2 minutes, 14 seconds
+[INFO 19:43:31] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/792882
+[INFO 19:44:03] my_main Updated target network
+[INFO 19:44:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/797887
+[INFO 19:45:12] my_main Recent Stats | t_env:     801297 | Episode:    23577
+battle_won_mean:           0.9769	ep_length_mean:           33.0066	epsilon:                   0.0500	grad_norm:                 0.6457
+loss_td:                   0.0839	q_taken_mean:              6.6145	return_mean:              19.7169	return_std:                1.8428
+target_mean:               6.6063	td_error_abs:              0.0839	test_battle_won_mean:      1.0000	test_ep_length_mean:      29.7500
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:45:15] my_main t_env: 801497 / 1005000
+[INFO 19:45:15] my_main Estimated time left: 43 minutes, 13 seconds. Time passed: 4 hours, 4 minutes, 22 seconds
+[INFO 19:45:29] my_main Updated target network
+[INFO 19:45:39] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/802908
+[INFO 19:46:38] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/807932
+[INFO 19:46:50] my_main Updated target network
+[INFO 19:47:19] my_main Recent Stats | t_env:     811299 | Episode:    23871
+battle_won_mean:           0.9643	ep_length_mean:           32.5487	epsilon:                   0.0500	grad_norm:                 0.6638
+loss_td:                   0.0888	q_taken_mean:              6.7088	return_mean:              19.5406	return_std:                2.3917
+target_mean:               6.7019	td_error_abs:              0.0888	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.8125
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:47:21] my_main t_env: 811505 / 1005000
+[INFO 19:47:21] my_main Estimated time left: 40 minutes, 49 seconds. Time passed: 4 hours, 6 minutes, 28 seconds
+[INFO 19:47:48] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/812940
+[INFO 19:48:24] my_main Updated target network
+[INFO 19:48:48] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/817940
+[INFO 19:49:30] my_main Recent Stats | t_env:     821312 | Episode:    24151
+battle_won_mean:           0.9592	ep_length_mean:           34.0408	epsilon:                   0.0500	grad_norm:                 3.0906
+loss_td:                   0.0979	q_taken_mean:              6.6237	return_mean:              19.5295	return_std:                2.2977
+target_mean:               6.6222	td_error_abs:              0.0979	test_battle_won_mean:      1.0000	test_ep_length_mean:      34.4375
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:49:32] my_main t_env: 821543 / 1005000
+[INFO 19:49:32] my_main Estimated time left: 39 minutes, 53 seconds. Time passed: 4 hours, 8 minutes, 39 seconds
+[INFO 19:49:59] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/822964
+[INFO 19:50:00] my_main Updated target network
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:36720 disconnected
+ResponseThread: No connection, dropping the response.
+[INFO 19:50:17] absl Shutdown gracefully.
+[INFO 19:50:17] absl Shutdown with return code: -15
+[INFO 19:50:17] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 45595 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-x_ashj_k/
+[INFO 19:50:17] absl Connecting to: ws://127.0.0.1:45595/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 45595 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-x_ashj_k/'
+Starting up...
+Startup Phase 1 complete
+[INFO 19:50:18] absl Connecting to: ws://127.0.0.1:45595/sc2api, attempt: 1, running: True
+[INFO 19:50:19] absl Connecting to: ws://127.0.0.1:45595/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 19:50:20] absl Connecting to: ws://127.0.0.1:45595/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:45595
+Startup Phase 3 complete. Ready for commands.
+[INFO 19:50:21] absl Connecting to: ws://127.0.0.1:45595/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:50030 accepted
+ReadyHandler: 127.0.0.1:50030 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 19:51:15] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/827986
+[INFO 19:51:36] my_main Updated target network
+[INFO 19:51:58] my_main Recent Stats | t_env:     831336 | Episode:    24452
+battle_won_mean:           0.9498	ep_length_mean:           35.9785	epsilon:                   0.0500	grad_norm:                 0.7707
+loss_td:                   0.0552	q_taken_mean:              6.6625	return_mean:              19.4090	return_std:                2.5858
+target_mean:               6.6792	td_error_abs:              0.0552	test_battle_won_mean:      0.8125	test_ep_length_mean:      39.6562
+test_return_mean:         17.7107	test_return_std:           4.7814	
+[INFO 19:52:01] my_main t_env: 831568 / 1005000
+[INFO 19:52:01] my_main Estimated time left: 42 minutes, 46 seconds. Time passed: 4 hours, 11 minutes, 8 seconds
+[INFO 19:52:26] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/832997
+[INFO 19:53:09] my_main Updated target network
+[INFO 19:53:29] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/838007
+[INFO 19:54:11] my_main Recent Stats | t_env:     841366 | Episode:    24747
+battle_won_mean:           0.9538	ep_length_mean:           33.0858	epsilon:                   0.0500	grad_norm:                 1.7882
+loss_td:                   0.0632	q_taken_mean:              6.4419	return_mean:              19.3927	return_std:                2.7884
+target_mean:               6.4355	td_error_abs:              0.0632	test_battle_won_mean:      1.0000	test_ep_length_mean:      29.7500
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:54:14] my_main t_env: 841600 / 1005000
+[INFO 19:54:14] my_main Estimated time left: 36 minutes, 13 seconds. Time passed: 4 hours, 13 minutes, 21 seconds
+[INFO 19:54:40] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/843018
+[INFO 19:54:42] my_main Updated target network
+[INFO 19:55:42] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/848038
+[INFO 19:56:04] my_main Updated target network
+[INFO 19:56:22] my_main Recent Stats | t_env:     851403 | Episode:    25042
+battle_won_mean:           0.9593	ep_length_mean:           34.0068	epsilon:                   0.0500	grad_norm:                 0.7683
+loss_td:                   0.0702	q_taken_mean:              6.6931	return_mean:              19.5150	return_std:                2.3675
+target_mean:               6.6755	td_error_abs:              0.0702	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.7812
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 19:56:24] my_main t_env: 851625 / 1005000
+[INFO 19:56:24] my_main Estimated time left: 33 minutes, 13 seconds. Time passed: 4 hours, 15 minutes, 31 seconds
+[INFO 19:56:53] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/853042
+[INFO 19:57:42] my_main Updated target network
+[INFO 19:57:56] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/858053
+[INFO 19:58:41] my_main Recent Stats | t_env:     861405 | Episode:    25335
+battle_won_mean:           0.9592	ep_length_mean:           34.0986	epsilon:                   0.0500	grad_norm:                 0.9218
+loss_td:                   0.0598	q_taken_mean:              6.7549	return_mean:              19.4776	return_std:                2.5647
+target_mean:               6.7837	td_error_abs:              0.0598	test_battle_won_mean:      0.9688	test_ep_length_mean:      38.1562
+test_return_mean:         19.7188	test_return_std:           1.5659	
+[INFO 19:58:44] my_main t_env: 861636 / 1005000
+[INFO 19:58:44] my_main Estimated time left: 33 minutes, 17 seconds. Time passed: 4 hours, 17 minutes, 51 seconds
+[INFO 19:59:10] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/863055
+[INFO 19:59:18] my_main Updated target network
+[INFO 20:00:16] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/868066
+[INFO 20:00:44] my_main Updated target network
+[INFO 20:00:59] my_main Recent Stats | t_env:     871405 | Episode:    25634
+battle_won_mean:           0.9830	ep_length_mean:           34.0510	epsilon:                   0.0500	grad_norm:                 1.1505
+loss_td:                   0.0440	q_taken_mean:              6.7238	return_mean:              19.8091	return_std:                1.4582
+target_mean:               6.7573	td_error_abs:              0.0440	test_battle_won_mean:      1.0000	test_ep_length_mean:      32.3125
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:01:02] my_main t_env: 871652 / 1005000
+[INFO 20:01:02] my_main Estimated time left: 30 minutes, 45 seconds. Time passed: 4 hours, 20 minutes, 10 seconds
+[INFO 20:01:29] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/873099
+[INFO 20:02:23] my_main Updated target network
+[INFO 20:02:30] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/878110
+[INFO 20:03:11] my_main Recent Stats | t_env:     881420 | Episode:    25913
+battle_won_mean:           0.9599	ep_length_mean:           33.4983	epsilon:                   0.0500	grad_norm:                 1.3127
+loss_td:                   0.1026	q_taken_mean:              6.5792	return_mean:              19.4697	return_std:                2.6217
+target_mean:               6.5499	td_error_abs:              0.1026	test_battle_won_mean:      0.9375	test_ep_length_mean:      36.9688
+test_return_mean:         19.3420	test_return_std:           2.5768	
+[INFO 20:03:15] my_main t_env: 881684 / 1005000
+[INFO 20:03:15] my_main Estimated time left: 27 minutes, 6 seconds. Time passed: 4 hours, 22 minutes, 22 seconds
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:50030 disconnected
+[INFO 20:03:39] absl Shutdown gracefully.
+[INFO 20:03:39] absl Shutdown with return code: -15
+[INFO 20:03:39] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 39095 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-qtfdw0r7/
+[INFO 20:03:39] absl Connecting to: ws://127.0.0.1:39095/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 39095 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-qtfdw0r7/'
+Starting up...
+Startup Phase 1 complete
+[INFO 20:03:40] absl Connecting to: ws://127.0.0.1:39095/sc2api, attempt: 1, running: True
+[INFO 20:03:41] absl Connecting to: ws://127.0.0.1:39095/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 20:03:42] absl Connecting to: ws://127.0.0.1:39095/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:39095
+Startup Phase 3 complete. Ready for commands.
+[INFO 20:03:43] absl Connecting to: ws://127.0.0.1:39095/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:48002 accepted
+ReadyHandler: 127.0.0.1:48002 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 20:03:55] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/883141
+[INFO 20:04:10] my_main Updated target network
+[INFO 20:04:59] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/888149
+[INFO 20:05:39] my_main Updated target network
+[INFO 20:05:39] my_main Recent Stats | t_env:     891442 | Episode:    26202
+battle_won_mean:           0.9607	ep_length_mean:           35.8286	epsilon:                   0.0500	grad_norm:                 0.4628
+loss_td:                   0.0797	q_taken_mean:              6.6166	return_mean:              19.5203	return_std:                2.3938
+target_mean:               6.6198	td_error_abs:              0.0797	test_battle_won_mean:      0.9375	test_ep_length_mean:      38.1875
+test_return_mean:         19.2552	test_return_std:           2.8848	
+[INFO 20:05:42] my_main t_env: 891707 / 1005000
+[INFO 20:05:42] my_main Estimated time left: 27 minutes, 49 seconds. Time passed: 4 hours, 24 minutes, 50 seconds
+[INFO 20:06:10] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/893154
+[INFO 20:07:15] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/898183
+[INFO 20:07:17] my_main Updated target network
+[INFO 20:07:59] my_main Recent Stats | t_env:     901460 | Episode:    26491
+battle_won_mean:           0.9375	ep_length_mean:           34.8021	epsilon:                   0.0500	grad_norm:                 2.0029
+loss_td:                   0.1478	q_taken_mean:              6.5660	return_mean:              19.1623	return_std:                3.2668
+target_mean:               6.5572	td_error_abs:              0.1478	test_battle_won_mean:      0.9688	test_ep_length_mean:      33.6562
+test_return_mean:         19.6319	test_return_std:           2.0492	
+[INFO 20:08:03] my_main t_env: 901736 / 1005000
+[INFO 20:08:03] my_main Estimated time left: 24 minutes, 7 seconds. Time passed: 4 hours, 27 minutes, 10 seconds
+[INFO 20:08:31] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/903183
+[INFO 20:08:55] my_main Updated target network
+[INFO 20:09:36] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/908186
+[INFO 20:10:21] my_main Recent Stats | t_env:     911483 | Episode:    26798
+battle_won_mean:           0.9448	ep_length_mean:           34.5828	epsilon:                   0.0500	grad_norm:                 0.4328
+loss_td:                   0.0397	q_taken_mean:              6.7688	return_mean:              19.3033	return_std:                2.8889
+target_mean:               6.7781	td_error_abs:              0.0397	test_battle_won_mean:      1.0000	test_ep_length_mean:      32.0312
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:10:23] my_main Updated target network
+[INFO 20:10:25] my_main t_env: 911757 / 1005000
+[INFO 20:10:25] my_main Estimated time left: 22 minutes, 3 seconds. Time passed: 4 hours, 29 minutes, 32 seconds
+[INFO 20:10:52] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/913205
+[INFO 20:11:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/918233
+[INFO 20:11:57] my_main Updated target network
+[INFO 20:12:41] my_main Recent Stats | t_env:     921512 | Episode:    27101
+battle_won_mean:           0.9577	ep_length_mean:           32.6417	epsilon:                   0.0500	grad_norm:                 0.8689
+loss_td:                   0.0440	q_taken_mean:              6.7798	return_mean:              19.4488	return_std:                2.6322
+target_mean:               6.8037	td_error_abs:              0.0440	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.3750
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:12:44] my_main t_env: 921783 / 1005000
+[INFO 20:12:44] my_main Estimated time left: 19 minutes, 15 seconds. Time passed: 4 hours, 31 minutes, 51 seconds
+[INFO 20:13:12] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/923266
+[INFO 20:13:32] my_main Updated target network
+[INFO 20:14:16] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/928280
+[INFO 20:14:56] my_main Recent Stats | t_env:     931535 | Episode:    27397
+battle_won_mean:           0.9637	ep_length_mean:           33.0891	epsilon:                   0.0500	grad_norm:                 3.4233
+loss_td:                   0.1130	q_taken_mean:              6.7431	return_mean:              19.5595	return_std:                2.2819
+target_mean:               6.8170	td_error_abs:              0.1130	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.9375
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:14:58] my_main Updated target network
+[INFO 20:15:00] my_main t_env: 931797 / 1005000
+[INFO 20:15:00] my_main Estimated time left: 16 minutes, 29 seconds. Time passed: 4 hours, 34 minutes, 7 seconds
+[INFO 20:15:28] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/933287
+[INFO 20:16:32] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/938292
+[INFO 20:16:38] my_main Updated target network
+[INFO 20:17:15] my_main Recent Stats | t_env:     941542 | Episode:    27687
+battle_won_mean:           0.9358	ep_length_mean:           33.8311	epsilon:                   0.0500	grad_norm:                 0.9296
+loss_td:                   0.0809	q_taken_mean:              6.7006	return_mean:              19.2121	return_std:                3.0139
+target_mean:               6.7129	td_error_abs:              0.0809	test_battle_won_mean:      0.9688	test_ep_length_mean:      32.0938
+test_return_mean:         19.5799	test_return_std:           2.3392	
+[INFO 20:17:18] my_main t_env: 941798 / 1005000
+[INFO 20:17:18] my_main Estimated time left: 14 minutes, 36 seconds. Time passed: 4 hours, 36 minutes, 25 seconds
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:48002 disconnected
+[INFO 20:17:26] absl Shutdown gracefully.
+[INFO 20:17:26] absl Shutdown with return code: -15
+[INFO 20:17:26] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 35321 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-05smjt57/
+[INFO 20:17:26] absl Connecting to: ws://127.0.0.1:35321/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 35321 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-05smjt57/'
+Starting up...
+Startup Phase 1 complete
+[INFO 20:17:27] absl Connecting to: ws://127.0.0.1:35321/sc2api, attempt: 1, running: True
+[INFO 20:17:28] absl Connecting to: ws://127.0.0.1:35321/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 20:17:29] absl Connecting to: ws://127.0.0.1:35321/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:35321
+Startup Phase 3 complete. Ready for commands.
+[INFO 20:17:30] absl Connecting to: ws://127.0.0.1:35321/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:42686 accepted
+ReadyHandler: 127.0.0.1:42686 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 20:17:58] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/943298
+[INFO 20:18:25] my_main Updated target network
+[INFO 20:19:01] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/948314
+[INFO 20:19:44] my_main Recent Stats | t_env:     951548 | Episode:    27986
+battle_won_mean:           0.9172	ep_length_mean:           34.4862	epsilon:                   0.0500	grad_norm:                 1.0618
+loss_td:                   0.0845	q_taken_mean:              6.7706	return_mean:              18.9621	return_std:                3.4651
+target_mean:               6.7447	td_error_abs:              0.0845	test_battle_won_mean:      0.9375	test_ep_length_mean:      29.6875
+test_return_mean:         19.0903	test_return_std:           3.5783	
+[INFO 20:19:47] my_main t_env: 951818 / 1005000
+[INFO 20:19:47] my_main Estimated time left: 13 minutes, 10 seconds. Time passed: 4 hours, 38 minutes, 54 seconds
+[INFO 20:19:59] my_main Updated target network
+[INFO 20:20:16] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/953332
+[INFO 20:21:19] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/958341
+[INFO 20:21:23] my_main Updated target network
+[INFO 20:22:02] my_main Recent Stats | t_env:     961551 | Episode:    28291
+battle_won_mean:           0.9599	ep_length_mean:           33.5117	epsilon:                   0.0500	grad_norm:                 1.4931
+loss_td:                   0.0557	q_taken_mean:              6.7285	return_mean:              19.5199	return_std:                2.3655
+target_mean:               6.7371	td_error_abs:              0.0557	test_battle_won_mean:      0.9688	test_ep_length_mean:      31.9375
+test_return_mean:         19.5885	test_return_std:           2.2909	
+[INFO 20:22:06] my_main t_env: 961825 / 1005000
+[INFO 20:22:06] my_main Estimated time left: 9 minutes, 57 seconds. Time passed: 4 hours, 41 minutes, 13 seconds
+[INFO 20:22:36] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/963348
+[INFO 20:23:00] my_main Updated target network
+[INFO 20:23:41] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/968379
+[INFO 20:24:21] my_main Recent Stats | t_env:     971573 | Episode:    28592
+battle_won_mean:           0.9771	ep_length_mean:           32.7026	epsilon:                   0.0500	grad_norm:                 0.7913
+loss_td:                   0.0628	q_taken_mean:              6.7580	return_mean:              19.7215	return_std:                1.8221
+target_mean:               6.7408	td_error_abs:              0.0628	test_battle_won_mean:      1.0000	test_ep_length_mean:      33.2500
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:24:24] my_main t_env: 971841 / 1005000
+[INFO 20:24:24] my_main Estimated time left: 7 minutes, 37 seconds. Time passed: 4 hours, 43 minutes, 31 seconds
+[INFO 20:24:33] my_main Updated target network
+[INFO 20:24:52] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/973394
+[INFO 20:25:58] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/978415
+[INFO 20:26:02] my_main Updated target network
+[INFO 20:26:40] my_main Recent Stats | t_env:     981604 | Episode:    28886
+battle_won_mean:           0.8963	ep_length_mean:           33.4983	epsilon:                   0.0500	grad_norm:                 1.3645
+loss_td:                   0.1205	q_taken_mean:              6.6953	return_mean:              18.7092	return_std:                3.8054
+target_mean:               6.6882	td_error_abs:              0.1205	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.6875
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:26:43] my_main t_env: 981857 / 1005000
+[INFO 20:26:43] my_main Estimated time left: 5 minutes, 21 seconds. Time passed: 4 hours, 45 minutes, 50 seconds
+[INFO 20:27:13] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/983444
+[INFO 20:27:38] my_main Updated target network
+[INFO 20:28:18] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/988470
+[INFO 20:28:57] my_main Recent Stats | t_env:     991621 | Episode:    29193
+battle_won_mean:           0.8983	ep_length_mean:           33.9525	epsilon:                   0.0500	grad_norm:                 1.1143
+loss_td:                   0.0691	q_taken_mean:              6.5680	return_mean:              18.7417	return_std:                3.7606
+target_mean:               6.5827	td_error_abs:              0.0691	test_battle_won_mean:      1.0000	test_ep_length_mean:      31.1250
+test_return_mean:         20.0000	test_return_std:           0.0000	
+[INFO 20:29:00] my_main Updated target network
+[INFO 20:29:00] my_main t_env: 991874 / 1005000
+[INFO 20:29:00] my_main Estimated time left: 2 minutes, 59 seconds. Time passed: 4 hours, 48 minutes, 7 seconds
+[INFO 20:29:29] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/993498
+[INFO 20:30:34] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/998529
+[INFO 20:30:35] my_main Updated target network
+[INFO 20:31:12] my_main Recent Stats | t_env:    1001639 | Episode:    29489
+battle_won_mean:           0.9707	ep_length_mean:           32.6287	epsilon:                   0.0500	grad_norm:                 1.0497
+loss_td:                   0.1793	q_taken_mean:              6.4325	return_mean:              19.6294	return_std:                2.1411
+target_mean:               6.4205	td_error_abs:              0.1793	test_battle_won_mean:      1.0000	test_ep_length_mean:      30.9688
+test_return_mean:         20.0000	test_return_std:           0.0000	
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:42686 disconnected
+[INFO 20:31:14] absl Shutdown gracefully.
+[INFO 20:31:14] absl Shutdown with return code: -15
+[INFO 20:31:14] absl Launching SC2: /home/dell/StarCraftII/Versions/Base75689/SC2_x64 -listen 127.0.0.1 -port 40461 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-8y4fqlwv/
+[INFO 20:31:14] absl Connecting to: ws://127.0.0.1:40461/sc2api, attempt: 0, running: True
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/dell/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 40461 -dataDir /home/dell/StarCraftII/ -tempDir /tmp/sc-8y4fqlwv/'
+Starting up...
+Startup Phase 1 complete
+[INFO 20:31:15] absl Connecting to: ws://127.0.0.1:40461/sc2api, attempt: 1, running: True
+[INFO 20:31:16] absl Connecting to: ws://127.0.0.1:40461/sc2api, attempt: 2, running: True
+Startup Phase 2 complete
+Creating stub renderer...
+[INFO 20:31:17] absl Connecting to: ws://127.0.0.1:40461/sc2api, attempt: 3, running: True
+Listening on: 127.0.0.1:40461
+Startup Phase 3 complete. Ready for commands.
+[INFO 20:31:18] absl Connecting to: ws://127.0.0.1:40461/sc2api, attempt: 4, running: True
+ConnectHandler: Request from 127.0.0.1:35258 accepted
+ReadyHandler: 127.0.0.1:35258 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/dell/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 20:31:28] my_main t_env: 1001900 / 1005000
+[INFO 20:31:28] my_main Estimated time left: 45 seconds. Time passed: 4 hours, 50 minutes, 35 seconds
+[INFO 20:31:57] my_main Saving models to results/models/qmix_env=8_adam_td_lambda__2023-02-17_15-40-46/1003538
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:35258 disconnected
+[INFO 20:32:16] absl Shutdown gracefully.
+[INFO 20:32:16] absl Shutdown with return code: -15
+[INFO 20:32:16] my_main Finished Training

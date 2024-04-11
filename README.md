@@ -41,7 +41,7 @@ pip install -e .
 **Run an experiment**
 
 ```shell
-# For SMAC
+# For StarCraft II
 $ python3 src/main.py --config=qmix --env-config=sc2 with env_args.map_name=1c3s5z
 ```
 
@@ -58,3 +58,5 @@ The trends of \%Coverage, #Distance, #Failure and %Failure.
 - https://github.com/oxwhirl/smac
 - https://github.com/hijkzzz/pymarl2/
 - https://github.com/NeteaseFuxiRL/wuji
+- https://github.com/openai/multiagent-particle-envs
+- https://github.com/openai/maddpg

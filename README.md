@@ -51,7 +51,10 @@ $ python main.py --scenario-name=simple_adv --evaluate-episodes=10
 ```
 
 # Trend Graph Results
-The trends of \%Coverage, #Distance, #Failure and %Failure.
+The trends of \%Coverage, #Distance, #Failure on cooperative task and competitive task.
+![图片](images/trend_coo.png)
+![图片](images/trend_com.png)
+
 
 
 # Reference

@@ -1,6 +1,6 @@
 # Unique failure patterns of Competitive Task
 
-We summarize the failure scenarios in the competitive task into two categories: target MAS loses (F3) and target MAS draws (F4).
+We summarize the failure scenarios in the competitive task into two categories: target MAS loses (F3) and draw (F4).
 
 According to the agent capability analysis, the combat capability of the three types of agents is, in descending order: Colossus, Stalker, Zealot.
 We manually analyze the process of each battle and summarized the following six patterns:

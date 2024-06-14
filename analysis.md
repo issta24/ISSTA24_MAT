@@ -16,7 +16,6 @@ In contrast, the baseline selects non-critical states for perturbation, as shown
 
 ![图片](./images/analysis3.png)
 
+As shown in Figure (a), the critical state is: the target agents move towards the destination, and the NPC is also near the destination. Our approach recognizes this critical state and causes the NPC to move toward destination, causing the agent to start hovering and eventually generating a failure scenario.
 
-
-
-![image](https://github.com/issta24/ISSTA24_MAT/blob/master/images/analysis.png?raw=true)
+In contrast, the baseline selects non-critical states for perturbation, as shown in Figure (b). Due to ignoring critical state, after the perturbation, NPC can no longer interfere with the behavior of the target agent, so there is no failure scenario.
